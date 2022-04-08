@@ -1,27 +1,16 @@
-import logo from './logo.svg';
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import { Router, Route } from "react-router-dom";
+import Main from "./Pages/Main";
 import "./App.css";
+
+// It seems Router is the new "Routes" tag in React Router DOM syntax.
+// "Routes" isn't available, and "Router" seems to be working.
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Footer />
+      <Router>
+        <Route path="/" element={<Main />} />
+      </Router>
     </div>
   );
 }
