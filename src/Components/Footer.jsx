@@ -3,9 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <footer>
-      <h1>
-        Footer Test
-      </h1>
+      <h2>
+        Footer
+      </h2>
     </footer>
   )
 }

@@ -1,14 +1,12 @@
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
-
-const Home = () => {
+const Test = () => {
   return (
     <>
-    <Header />
+    <section>
       <h1>Test</h1>
-    <Footer />
+    </section>
+      
     </>
   )
 }
 
-export default Home;
+export default Test;
