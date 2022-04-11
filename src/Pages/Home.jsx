@@ -1,9 +1,73 @@
 const Home = () => {
   return (
     <>
-    <section>
-      <h1>Home</h1>
-    </section>
+    <main>
+      <section className="house">
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="floor">
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+          <article className="apt"></article>
+        </section>
+        <section className="entrance">
+          <article className="door"></article>
+        </section>
+      </section>
+    </main>
     </>
   )
 }
