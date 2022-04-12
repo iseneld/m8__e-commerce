@@ -63,6 +63,7 @@ footer {
     .floor {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
       gap: 1rem;
     }
     
@@ -75,6 +76,7 @@ footer {
     .entrance {
       height: var(--window-size);
       padding-bottom: 0;
+      padding-top: 10%;
       display: flex;
       justify-content: center;
     }
