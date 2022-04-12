@@ -3,9 +3,11 @@ import House from '../Components/House';
 const Home = () => {
   return (
     <>
-    <main>
-      <House />
-    </main>
+      <div className="background">
+        <main>
+          <House />
+        </main>
+      </div>
     </>
   )
 }
