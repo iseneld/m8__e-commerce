@@ -1,68 +1,21 @@
+import Floor from '../Components/Floor';
+
 const Home = () => {
   return (
     <>
     <main>
       <section className="house">
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
-        <section className="floor">
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-          <article className="apt"></article>
-        </section>
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
+        <Floor />
         <section className="entrance">
           <article className="door"></article>
         </section>
