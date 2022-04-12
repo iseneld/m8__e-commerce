@@ -1,5 +1,5 @@
 const Window = () => (
-  <article className="apt"></article>
+  <article className="window"></article>
 );
 
 export default Window;

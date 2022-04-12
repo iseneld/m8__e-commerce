@@ -67,7 +67,7 @@ footer {
       gap: 1rem;
     }
     
-    .apt {
+    .window {
       background-color: red;
       height: var(--window-size);
       width: var(--window-size);
