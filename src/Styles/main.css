@@ -65,7 +65,7 @@ footer {
       margin-left: 20%;
       margin-top: 20%;
 
-      background-color: rgb(94, 94, 94);
+      background: url(./css-content/texture-brick.jpeg) repeat;
       box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
       z-index: 2;
     }
@@ -83,6 +83,7 @@ footer {
       margin: .5vw;
       height: var(--window-size);
       width: var(--window-size);
+      border: 2px solid #1C1A1A;
     }
     
     .entrance {
@@ -94,7 +95,8 @@ footer {
     }
     
     .door {
-      background-color: rgb(46, 46, 46);
+      background: url(./css-content/door.jpeg) no-repeat;
+      background-size: cover;
       height: var(--window-size);
       width: calc(var(--window-size) / 1.5);
   }
