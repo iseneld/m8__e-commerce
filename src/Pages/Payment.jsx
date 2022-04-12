@@ -4,7 +4,7 @@ import "../Styles/payment.css";
 const Payment = () => {
   return (
     <>
-    <section>
+    <section className="shop-wrap">
       <h1 className="hej">Buy XTREME Coins</h1>
         <section className="shop">
           <Option />

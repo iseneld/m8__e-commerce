@@ -1,13 +1,30 @@
+.shop-wrap {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: rgb(152, 151, 230);
+  border-radius: 1rem;
+}
 .shop {
+  padding: 2rem;
+  background-color: rgb(106, 105, 188);
+  border-radius: .75rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .option {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: red;
+  border-radius: .5rem;
+  background-color: rgb(59, 57, 175);
+  }
+  
+  .option button {
+    border-radius: .5rem;
+    padding: 1rem;
 }
