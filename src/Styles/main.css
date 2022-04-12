@@ -1,5 +1,5 @@
 :root {
-  --window-size: 18vh;
+  --window-size: 15vw;
 }
 
 * {
@@ -70,6 +70,7 @@ footer {
     
     .window {
       background-color: red;
+      margin: .5vw;
       height: var(--window-size);
       width: var(--window-size);
     }
