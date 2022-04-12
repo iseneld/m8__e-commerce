@@ -1,25 +1,10 @@
-import Floor from '../Components/Floor';
+import House from '../Components/House';
 
 const Home = () => {
   return (
     <>
     <main>
-      <section className="house">
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <Floor />
-        <section className="entrance">
-          <article className="door"></article>
-        </section>
-      </section>
+      <House />
     </main>
     </>
   )
