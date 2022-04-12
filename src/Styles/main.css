@@ -1,5 +1,5 @@
 :root {
-  --window-size: 10rem;
+  --window-size: 18vh;
 }
 
 * {
@@ -63,8 +63,9 @@ footer {
     .floor {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      gap: 1rem;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: .5vh;
     }
     
     .window {
