@@ -115,6 +115,7 @@ footer {
           flex-direction: row;
   gap: 40%;
 }
+
 :root {
   --lilac-background: #B3BBFF;
   --faded-lilac:  rgba(36, 42, 91, 0.19);
@@ -231,3 +232,4 @@ footer {
           flex-direction: row;
   gap: 40%;
 }
+/*# sourceMappingURL=apartment.css.map */

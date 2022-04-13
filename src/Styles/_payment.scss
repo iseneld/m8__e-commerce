@@ -1,21 +1,12 @@
-:root {
-  --color-white: #FAFBFB;
-  --color-2a: #ABD4C4;
-  --color-2b: #97C5B1;
-  --color-2c: #63AB8B;
-  --color-dark: #3f6c59;
-}
-
-body {
-  background-color: var(--color-2a);
-}
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-2b);
-  ;
   border-radius: 1rem;
 }
+
 .shop {
   padding: 2rem;
   border-radius: .75rem;
@@ -48,6 +39,7 @@ body {
   width: 100%;
   padding: 0;
 }
+
 form {
   background-color: var(--color-2c);
   padding: 2rem;
@@ -59,16 +51,15 @@ form {
 
 .option {
   flex-grow: 1;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  /* border-radius: .5rem; */
   background-color: var(--color-2c);
-  }
-  
-  .option button {
+
+  button {
     border-radius: .5rem;
     padding: 1rem;
+  }
 }
