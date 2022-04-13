@@ -1,0 +1,31 @@
+footer {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.modal_content {
+    height: 80vh;
+    width: 90vw;
+    background-color: white;
+    position: absolute;
+  }
+
+.apt-border {
+    
+}
+
+.apt-display {
+
+}
