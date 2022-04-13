@@ -5,11 +5,10 @@ const Header = () => {
   return (
     <header>
       <h1>
-        <Link to="/">The Hills</Link>
+        <Link to="/"><img src="./images/logo.png" alt="The Hills logo" /></Link>
       </h1>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/pay">Pay</Link>
+        <Link to="/pay1">Pay</Link>
       </nav>
     </header>
   )

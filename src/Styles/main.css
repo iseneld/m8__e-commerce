@@ -1,5 +1,10 @@
 :root {
   --window-size: 15vw;
+--color-white: #FAFBFB;
+--color-2a: #ABD4C4;
+--color-2b: #97C5B1;
+--color-2c: #63AB8B;
+--color-dark: #3f6c59;
 }
 
 * {
@@ -32,13 +37,20 @@ header {
   justify-content: space-between;
 }
 
-header a {
-  margin: 1rem;
-  font-size: 1.5rem;
+a>img {
+  width: 200px;
+  text-align: center;
 }
 
-main {
-  /* flex-grow: 1; */
+header>nav>a {
+  margin: 1rem;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header>nav>a:hover {
+  text-decoration: underline;
 }
 
 footer {

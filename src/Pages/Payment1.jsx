@@ -2,7 +2,7 @@ import Option from '../Components/Option';
 import Breadcrumb from '../Components/Breadcrumb'; 
 import "../Styles/payment.css";
 
-const Payment = () => {
+const Payment1 = () => {
   return (
     <>
     <section className="shop-wrap">
@@ -22,4 +22,4 @@ const Payment = () => {
   )
 }
 
-export default Payment;
+export default Payment1;
