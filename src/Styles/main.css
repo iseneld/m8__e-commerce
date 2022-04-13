@@ -16,7 +16,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  
+  display: flex;
 }
 
 #root {
@@ -26,6 +26,9 @@ body {
   flex-direction: column;
 }
 
+#root>section {
+  flex-grow: 1;
+}
 header {
   position: sticky;
   top: 0;
