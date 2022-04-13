@@ -1,3 +1,4 @@
+
 img {
     width: auto;
     max-width: 95%;
@@ -70,28 +71,6 @@ footer {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.apt-title {
-    margin-bottom: 1%;
-}
-
-.sale-status {
-    color: rgba(88, 114, 102, 0.8);
-}
-
-.about-apt {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-    gap: 40%;
-}
-
-
-
 
 :root {
     --lilac-background: #B3BBFF;
@@ -99,6 +78,7 @@ footer {
     --dark-blue: #242A5B;
     --dark-blue-faded: rgba(36, 42, 91, 0.6);
 }
+
 
 img {
     width: auto;
