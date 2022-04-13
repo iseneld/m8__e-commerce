@@ -30,6 +30,7 @@ body {
 }
 
 #root {
+  flex-grow: 1;
   width: 100%;
 
   display: flex;
@@ -43,13 +44,13 @@ body {
 header {
   position: sticky;
   top: 0;
-  z-index: 10;
   padding: 2rem;
-  /* background-color: rgb(225, 225, 225); */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  z-index: 10;
   div {
     display: flex;
     flex-wrap: nowrap;
@@ -81,11 +82,14 @@ header {
 }
 
 footer {
-  height: 10rem;
   width: 100%;
   padding: 2rem;
   background-color: rgb(37, 37, 37);
   color: var(--color-white);
+li {
+  padding: 0.5rem;
+  list-style: none;
+}
 }
 
 /* CLASSES */

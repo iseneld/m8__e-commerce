@@ -190,6 +190,9 @@ body {
 }
 
 #root {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,9 +213,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10;
   padding: 2rem;
-  /* background-color: rgb(225, 225, 225); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +223,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 10;
 }
 
 header div {
@@ -270,11 +272,15 @@ header div section {
 }
 
 footer {
-  height: 10rem;
   width: 100%;
   padding: 2rem;
   background-color: #252525;
   color: var(--color-white);
+}
+
+footer li {
+  padding: 0.5rem;
+  list-style: none;
 }
 
 /* CLASSES */

@@ -1,13 +1,11 @@
-:root {
-  // DIMENSIONS
-  --window-size: 15vw;
-}
+
 
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-2b);
-  ;
   border-radius: 1rem;
 }
 .shop {
@@ -42,6 +40,7 @@
   width: 100%;
   padding: 0;
 }
+
 form {
   background-color: var(--color-2c);
   padding: 2rem;
@@ -53,16 +52,15 @@ form {
 
 .option {
   flex-grow: 1;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  /* border-radius: .5rem; */
   background-color: var(--color-2c);
-  }
-  
-  .option button {
+
+  button {
     border-radius: .5rem;
     padding: 1rem;
+  }
 }
