@@ -1,11 +1,3 @@
-
-:root {
-  --lilac-background: #B3BBFF;
-  --faded-lilac:  rgba(36, 42, 91, 0.19);
-  --dark-blue: #242A5B;
-  --dark-blue-faded: rgba(36, 42, 91, 0.6);
-}
-
 img {
   width: auto;
   max-width: 95%;
@@ -116,6 +108,7 @@ footer {
           flex-direction: row;
   gap: 40%;
 }
+
 :root {
   --lilac-background: #B3BBFF;
   --faded-lilac:  rgba(36, 42, 91, 0.19);
@@ -232,3 +225,4 @@ footer {
           flex-direction: row;
   gap: 40%;
 }
+/*# sourceMappingURL=apartment.css.map */

@@ -3,9 +3,12 @@ import React from 'react';
 const Header = () => {
   return (
     <footer>
-      <h2>
-        Footer
-      </h2>
+      <ul>
+        <li>News</li>
+        <li>Terms of Service</li>
+        <li>About us</li>
+        <li>Contact</li>
+      </ul>
     </footer>
   )
 }

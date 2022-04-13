@@ -1,14 +1,8 @@
 :root {
-  --color-white: #FAFBFB;
-  --color-2a: #ABD4C4;
-  --color-2b: #97C5B1;
-  --color-2c: #63AB8B;
-  --color-dark: #3f6c59;
+  // DIMENSIONS
+  --window-size: 15vw;
 }
 
-body {
-  background-color: var(--color-2a);
-}
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;

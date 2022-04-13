@@ -2,11 +2,11 @@ import House from '../Components/House';
 
 const Home = () => (
   <>
-    <div className="background">
+    {/* <div className="background"> */}
       <main>
         <House />
       </main>
-    </div>
+    {/* </div> */}
   </>
 );
 

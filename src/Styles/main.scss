@@ -1,10 +1,8 @@
-@import 'apartment.scss';
 @import 'payment.scss';
 @import 'house.scss';
 
 :root {
-  --window-size: 15vw;
-
+  // COLOR PALETTE
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
   --color-2b: #97C5B1;
@@ -26,6 +24,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  background-color: var(--color-2a);
   display: flex;
   overflow-x: hidden;
 }
@@ -82,9 +81,11 @@ header {
 }
 
 footer {
-  background-color: rgb(37, 37, 37);
+  height: 10rem;
   width: 100%;
   padding: 2rem;
+  background-color: rgb(37, 37, 37);
+  color: var(--color-white);
 }
 
 /* CLASSES */

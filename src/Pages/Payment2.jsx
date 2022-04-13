@@ -12,7 +12,8 @@ const Payment2 = () => {
           <section className="shop2-left">
             <Option />
             <table>
-              <tr>
+              <tbody>
+                <tr>
                 <td>Order</td>
                 <td>1000XTC</td>
               </tr>
@@ -20,6 +21,7 @@ const Payment2 = () => {
                 <td>Total</td>
                 <td>$35</td>
               </tr>
+              </tbody>
             </table>
             <footer>
               All prices are inclusive of VAT if applicable. <br />
@@ -28,20 +30,20 @@ const Payment2 = () => {
           </section>
           
            <form>
-              <label for="cardtype">Card Type</label>
+              <label htmlFor="cardtype">Card Type</label>
               <select id="cardtype" name="cardtype"></select>
-              <label for="cardnumber">Card Number</label>
+              <label htmlFor="cardnumber">Card Number</label>
               <input type="number" id="cardnumber" name="cardnumber" />
               <div>
-                <label for="expirydate">Expiry Date</label>
+                <label htmlFor="expirydate">Expiry Date</label>
                 <input type="date" id="expirydate" name="expirydate" />
-                <label for="cvv">CVV</label>
+                <label htmlFor="cvv">CVV</label>
                 <input type="number" id="cvv" name="cvv" />
               </div>
-              <label for="cardholder">Card Holder</label>
+              <label htmlFor="cardholder">Card Holder</label>
               <input type="text" id="cardholder" name="cardholder" />
               <input type="checkbox" id="remember" name="remember" />
-              <label for="remember">Save payment method for later use</label>
+              <label htmlFor="remember">Save payment method for later use</label>
               <Link to="/">Back</Link>
               <input type="Submit" id="paybtn" name="paybtn" value="Pay"/>
           </form>
