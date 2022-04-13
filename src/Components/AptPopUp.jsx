@@ -1,9 +1,8 @@
-import "../Styles/"
-import Window from "Window.jsx";
+import Popup from "reactjs-popup";
 
-const PopupApt = () => {
+const AptPopUp = () => {
     <div>
-        <Popup trigger={<Window> Click to open popup </Window>}
+        <Popup trigger={<button> Click to open popup </button>}
             position="right center">
             <div>GeeksforGeeks</div>
             <button>Click here</button>
@@ -11,5 +10,5 @@ const PopupApt = () => {
     </div>
 };
 
-export default PopupApt
+export default AptPopUp
 
