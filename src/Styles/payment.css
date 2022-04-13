@@ -13,6 +13,18 @@
   gap: 1rem;
 }
 
+.shop2 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 .option {
   flex-grow: 1;
   display: flex;
