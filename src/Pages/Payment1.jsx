@@ -1,6 +1,5 @@
 import Option from '../Components/Option';
 import Breadcrumb from '../Components/Breadcrumb'; 
-import "../Styles/payment.css";
 
 const Payment1 = () => {
   return (
