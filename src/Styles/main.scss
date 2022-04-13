@@ -1,14 +1,19 @@
-@import 'normalize.scss';
 @import 'apartment.scss';
+@import 'payment.scss';
 
 
 :root {
   --window-size: 15vw;
+
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
   --color-2b: #97C5B1;
   --color-2c: #63AB8B;
   --color-dark: #3f6c59;
+  --lilac-background: #B3BBFF;
+  --faded-lilac: rgba(36, 42, 91, 0.19);
+  --dark-blue: #242A5B;
+  --dark-blue-faded: rgba(36, 42, 91, 0.6);
 }
 
 * {
@@ -30,10 +35,10 @@ body {
 
   display: flex;
   flex-direction: column;
-}
 
-#root>section {
-  flex-grow: 1;
+  section {
+    flex-grow: 1;
+  }
 }
 
 header {
@@ -52,22 +57,22 @@ a>img {
   text-align: center;
 }
 
-header>div {
+header {
+  div {
   display: flex;
   align-items: center;
-}
-
-header>div>section {
-  display: flex;
-  align-items: center;
-
-  color: var(--color-dark);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-header>div>nav {
-  display: flex;
+  nav {
+    display: flex;
+  }
+  section {
+    display: flex;
+    align-items: center;
+  
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  }
 }
 
 header>div>nav>a {

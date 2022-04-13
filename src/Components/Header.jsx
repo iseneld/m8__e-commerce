@@ -13,7 +13,7 @@ const Header = () => {
           <p>500</p>
         </section>
         <nav>
-          <Link to="/pay1">Pay</Link>
+          <Link to="/pay1"><img src="./images/pay.png" alt="Payment icon" class="icon" /></Link>
           <img src="./images/user.png" alt="User icon" class="icon"/>
         </nav>
       </div>
