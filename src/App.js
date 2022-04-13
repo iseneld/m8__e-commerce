@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Payment from "./Pages/Payment1";
 import Payment2 from "./Pages/Payment2";
+import Payment3 from "./Pages/Payment3";
 import "./Styles/normalize.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pay" element={<Payment />} />
         <Route path="/pay2" element={<Payment2 />} />
+        <Route path="/pay3" element={<Payment3 />} />
       </Routes>
       <Footer />
     </>

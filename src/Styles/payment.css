@@ -1,3 +1,15 @@
+:root {
+  --color-white: #FAFBFB;
+  --color-secondary-a: #ABD4C4;
+  --color-secondary-b: #97C5B1;
+  --color-secondary-c: #63AB8B;
+  --color-accent: #C4BE8D;
+
+}
+
+body {
+  background-color: var(--color-white);
+}
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;
