@@ -9,11 +9,12 @@ const Header = () => {
       </h1>
       <div>
         <section>
-          <img src="./images/coin.png" alt="Currency icon" class="balance-icon"/>
+          <img src="./images/coin.png" alt="Currency icon" class="icon"/>
           <p>500</p>
         </section>
         <nav>
           <Link to="/pay1">Pay</Link>
+          <img src="./images/user.png" alt="User icon" class="icon"/>
         </nav>
       </div>
       

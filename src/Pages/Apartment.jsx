@@ -1,4 +1,3 @@
-import "../Styles/apartment.css";
 import AptDisplay from "../Components/AptDisplay";
 import "../Styles/css-content/lgh1.jpeg";
 
