@@ -6,6 +6,8 @@ import Home from "./Pages/Home";
 import Payment1 from "./Pages/Payment1";
 import Payment2 from "./Pages/Payment2";
 import Payment3 from "./Pages/Payment3";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function App() {
   return (
