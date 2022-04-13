@@ -27,7 +27,7 @@ const Payment3 = () => {
               XTREME Coins limited, Stockholm
             </footer>
           </section>
-          <section>
+          <section className="shop3-right">
             <h2>Order Confirmed!</h2>
             <h3>Thank you for your purchase!</h3>
             <p>Order ID 3636879183</p>

@@ -31,25 +31,31 @@ body {
   gap: 4rem;
 }
 
-.shop2-left {
-  background-color: var(--color-2b);
+.shop2-left,
+.shop3-right {
+  background-color: var(--color-2c);
   padding: 2rem;
   width: 50%;
 }
 
-.shop2-left footer {
-  background-color: var(--color-2b);
-  ;
-  padding: 2rem;
+.shop2-left>table {
+  margin-bottom: 2rem;
+}
+
+.shop2-left>table,
+footer {
+  width: 100%;
+  padding: 0;
 }
 form {
-  background-color: #97A0E0;
+  background-color: var(--color-2c);
   padding: 2rem;
   height: 100%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
+
 .option {
   flex-grow: 1;
   display: flex;
@@ -57,7 +63,7 @@ form {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
   background-color: var(--color-2c);
   }
   
