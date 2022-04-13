@@ -43,7 +43,8 @@ body {
 }
 
 .shop2-left>table,
-footer {
+.shop2-left>footer {
+  background-color: var(--color-2c);
   width: 100%;
   padding: 0;
 }
