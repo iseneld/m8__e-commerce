@@ -6,7 +6,7 @@ const Payment1 = () => {
     <>
     <section className="shop-wrap">
       <Breadcrumb />
-      <h1 className="hej">Buy XTREME Coins</h1>
+      <h1>Buy XTREME Coins</h1>
         <section className="shop">
           <Option />
           <Option />
