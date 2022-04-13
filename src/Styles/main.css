@@ -26,7 +26,7 @@ header {
   top: 0;
   z-index: 1;
   padding: 2rem;
-  background-color: rgb(225, 225, 225);
+  /* background-color: rgb(225, 225, 225); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,59 +44,58 @@ main {
 footer {
   width: 100%;
   padding: 2rem;
-    background-color: rgb(225, 225, 225);
-    }
+}
     
-    /* CLASSES */
+/* CLASSES */
 
-    .background {
-      background: url(./css-content/city.jpeg) no-repeat;
-      background-position: bottom;
-      z-index: 1
-    }
-    
-    .house {
-      padding: 1rem 1rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 60%;
+.background {
+  background: url(./css-content/city.jpeg) no-repeat;
+  background-position: bottom;
+  z-index: 1
+}
 
-      margin-left: 20%;
-      margin-top: 20%;
+.house {
+  padding: 1rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
 
-      background: url(./css-content/texture-brick.jpeg) repeat;
-      box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-      z-index: 2;
-    }
-    
-    .floor {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: .5vh;
-    }
-    
-    .window {
-      background-color: red;
-      margin: .5vw;
-      height: var(--window-size);
-      width: var(--window-size);
-      border: 2px solid #1C1A1A;
-    }
-    
-    .entrance {
-      height: var(--window-size);
-      padding-bottom: 0;
-      margin-top: 10%;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .door {
-      background: url(./css-content/door.jpeg) no-repeat;
-      background-size: cover;
-      height: var(--window-size);
-      width: calc(var(--window-size) / 1.5);
+  margin-left: 20%;
+  margin-top: 20%;
+
+  background: url(./css-content/texture-brick.jpeg) repeat;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  }
+  
+  .floor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: .5vh;
+  }
+  
+  .window {
+    background-color: red;
+    margin: .5vw;
+    height: var(--window-size);
+    width: var(--window-size);
+    border: 2px solid #1C1A1A;
+  }
+  
+  .entrance {
+    height: var(--window-size);
+    padding-bottom: 0;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .door {
+    background: url(./css-content/door.jpeg) no-repeat;
+    background-size: cover;
+    height: var(--window-size);
+    width: calc(var(--window-size) / 1.5);
   }

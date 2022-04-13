@@ -1,12 +1,13 @@
 import Option from '../Components/Option';
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../Components/Breadcrumb'; 
 import "../Styles/payment.css";
 
 const Payment3 = () => {
   return (
     <>
     <section className="shop-wrap">
-      <h6>Select Payment{">"} Payment Information {">"} <strong>Order Confirmation</strong></h6>
+      <Breadcrumb />
       <h1 className="hej">Order Confirmation</h1>
         <section className="shop2">
           <section className="shop2-left">

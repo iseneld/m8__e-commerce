@@ -1,11 +1,12 @@
 import Option from '../Components/Option';
+import Breadcrumb from '../Components/Breadcrumb'; 
 import "../Styles/payment.css";
 
 const Payment = () => {
   return (
     <>
     <section className="shop-wrap">
-      <h6><strong>Select Payment</strong> {">"} Payment Information {">"} Order Confirmation</h6>
+      <Breadcrumb />
       <h1 className="hej">Buy XTREME Coins</h1>
         <section className="shop">
           <Option />

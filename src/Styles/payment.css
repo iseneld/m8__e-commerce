@@ -1,24 +1,23 @@
 :root {
   --color-white: #FAFBFB;
-  --color-secondary-a: #ABD4C4;
-  --color-secondary-b: #97C5B1;
-  --color-secondary-c: #63AB8B;
+  --color-2a: #ABD4C4;
+  --color-2b: #97C5B1;
+  --color-2c: #63AB8B;
   --color-accent: #C4BE8D;
-
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-2a);
 }
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;
-  background-color: #B2BBFF;
+  background-color: var(--color-2b);
+  ;
   border-radius: 1rem;
 }
 .shop {
   padding: 2rem;
-  background-color: rgb(106, 105, 188);
   border-radius: .75rem;
   display: flex;
   flex-wrap: wrap;
@@ -33,13 +32,14 @@ body {
 }
 
 .shop2-left {
-  background-color: rgb(106, 105, 188);
+  background-color: var(--color-2b);
   padding: 2rem;
   width: 50%;
 }
 
 .shop2-left footer {
-  background-color: rgb(106, 105, 188);
+  background-color: var(--color-2b);
+  ;
   padding: 2rem;
 }
 form {
@@ -58,7 +58,7 @@ form {
   justify-content: center;
   padding: 1rem;
   border-radius: .5rem;
-  background-color: rgb(59, 57, 175);
+  background-color: var(--color-2c);
   }
   
   .option button {
