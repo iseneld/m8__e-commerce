@@ -1,7 +1,7 @@
 .shop-wrap {
   margin: 1rem;
   padding: 2rem;
-  background-color: rgb(152, 151, 230);
+  background-color: #B2BBFF;
   border-radius: 1rem;
 }
 .shop {
@@ -17,10 +17,23 @@
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 4rem;
 }
 
+.shop2-left {
+  background-color: rgb(106, 105, 188);
+  padding: 2rem;
+  width: 50%;
+}
+
+.shop2-left footer {
+  background-color: rgb(106, 105, 188);
+  padding: 2rem;
+}
 form {
+  background-color: #97A0E0;
+  padding: 2rem;
+  height: 100%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
