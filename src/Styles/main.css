@@ -17,6 +17,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  overflow-x: hidden;
 }
 
 #root {
@@ -45,7 +46,21 @@ a>img {
   text-align: center;
 }
 
-header>nav>a {
+header>div {
+  display: flex;
+  align-items: center;
+}
+
+header>div>section {
+  display: flex;
+  align-items: center;
+
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header>div>nav>a {
   margin: 1rem;
   color: var(--color-dark);
   font-size: 1.5rem;
@@ -70,6 +85,9 @@ footer {
   z-index: 1
 }
 
+.balance-icon {
+  width: 50px;
+}
 .house {
   padding: 1rem 1rem 0;
   display: flex;
