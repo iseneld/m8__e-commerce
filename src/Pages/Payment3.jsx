@@ -1,7 +1,6 @@
 import Option from '../Components/Option';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../Components/Breadcrumb'; 
-import "../Styles/payment.css";
 
 const Payment3 = () => {
   return (

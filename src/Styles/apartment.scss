@@ -1,13 +1,4 @@
-<<<<<<< Updated upstream
-:root {
-    --lilac-background: #B3BBFF;
-    --faded-lilac:  rgba(36, 42, 91, 0.19);
-    --dark-blue: #242A5B;
-    --dark-blue-faded: rgba(36, 42, 91, 0.6);
-}
 
-=======
->>>>>>> Stashed changes
 img {
     width: auto;
     max-width: 95%;
@@ -80,6 +71,86 @@ footer {
 
     display: flex;
     justify-content: center;
+
+:root {
+    --lilac-background: #B3BBFF;
+    --faded-lilac:  rgba(36, 42, 91, 0.19);
+    --dark-blue: #242A5B;
+    --dark-blue-faded: rgba(36, 42, 91, 0.6);
+}
+
+
+img {
+    width: auto;
+    max-width: 95%;
+    max-height: 75%;
+    margin: 2% 0 2% 0;
+}
+
+
+button {
+    background: var(--dark-blue);
+    border: none;
+
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-align: center;
+
+    display: inline-block;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buy-button {
+    margin: 3% 0 3% 0;
+}
+
+footer {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(178, 187, 255, 0.5);
+    /* background-color: rgba(91, 136, 116, 0.5); */
+/*     rgba(247, 247, 247, 0.5); */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.modal_content {
+    height: 85vh;
+    width: 80vw;
+/*     background-color: rgba(171, 212, 196, 1); */
+    background: rgb(75, 82, 136);
+    
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+.apt-display {
+    height: 85%;
+    width: 90%;
+    background: rgba(250, 251, 251, 0.9);
+    border-radius: 8px;
+
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -89,7 +160,7 @@ footer {
 }
 
 .sale-status {
-    color: rgba(88, 114, 102, 0.8);
+    color: var(--dark-blue-faded);
 }
 
 .about-apt {
@@ -99,9 +170,3 @@ footer {
 
     gap: 40%;
 }
-<<<<<<< Updated upstream
-=======
-
-
-
->>>>>>> Stashed changes
