@@ -53,7 +53,11 @@ footer {
 .modal_content {
     height: 85vh;
     width: 80vw;
+<<<<<<< Updated upstream
     background-color: rgba(171, 212, 196, 1); 
+=======
+    background-color: var(--lilac-background); 
+>>>>>>> Stashed changes
   /*   background: rgb(75, 82, 136); */
     
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -97,3 +101,62 @@ footer {
     gap: 40%;
 }
 
+<<<<<<< Updated upstream
+=======
+ul {
+    list-style: none;
+}
+
+
+/////////// PROFILE PAGE ///////////
+
+.profile-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.about-user {
+    background: var(--dark-lilac);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5%;
+}
+
+.profile-pic {
+    width: 20vw;
+    height: 30vh;
+    background: var(--dark-blue);
+    text-align: center;
+    color: white;
+}
+
+.user-title {
+    font-size: 2rem;
+    margin: 10% 0 5% 0;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10% 0 0 0;
+}
+
+.user-properties {
+    background: pink;
+}
+>>>>>>> Stashed changes
