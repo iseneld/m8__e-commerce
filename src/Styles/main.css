@@ -204,13 +204,12 @@ form {
 body {
   height: 100vh;
   width: 100vw;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-sky-a)), to(var(--color-sky-b)));
-  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
+  background: var(--color-sky-a);
 }
 
 #root {
@@ -293,6 +292,12 @@ header div section {
   color: var(--color-dark);
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+main {
+  padding-top: 10rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-sky-a)), to(var(--color-sky-b)));
+  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
 }
 
 footer {

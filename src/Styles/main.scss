@@ -27,10 +27,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
+  background: var(--color-sky-a);
 }
 
 #root {
@@ -85,6 +85,10 @@ header {
   }
 }
 
+main {
+  padding-top: 10rem;
+  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
+}
 footer {
   width: 100%;
   padding: 2rem;
