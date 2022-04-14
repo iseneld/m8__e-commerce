@@ -19,10 +19,10 @@ const UserDisplay = () => {
                         </ul>
                     </section>
                     <section className="user-content">
-                        <section className="title-icon">
-                            <h1 className="user-props-title">User Properties</h1>
-                            <div className="store-icon"></div>
-                        </section>
+                        <div className="title-icon">
+                            <h1 className="user-props-title">Your Properties</h1>
+                            <div className="icon">icon</div>
+                        </div>
                         <UserProperties />
                     </section>
                 </section>
