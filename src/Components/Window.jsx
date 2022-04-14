@@ -19,7 +19,7 @@ const Window = () => (
             </ul>
           </section>
           <section className="apt-buttons">
-            <button>VIEW</button>
+            <Link to="/apartment"><button>VIEW</button></Link>
             <button>BUY</button>
           </section>
         </div>
