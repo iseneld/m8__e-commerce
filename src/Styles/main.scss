@@ -3,11 +3,14 @@
 
 :root {
   // COLOR PALETTE
+  // 2 as in secondary color, variants a-c
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
   --color-2b: #97C5B1;
   --color-2c: #63AB8B;
   --color-dark: #3f6c59;
+  --color-sky-a: #97CAD1;
+  --color-sky-b: #95AFDE;
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --dark-blue: #242A5B;
@@ -24,7 +27,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: var(--color-2a);
+  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
+  background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
 }
