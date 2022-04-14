@@ -153,7 +153,8 @@ form {
 }
 
 .window {
-  background-color: var(--color-sky-a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-sky-b)), color-stop(40%, #5B7687), color-stop(3%, #4B6270), to(#33434D));
+  background-image: linear-gradient(var(--color-sky-b), #5B7687 40%, #4B6270 3%, #33434D);
   margin: .5vw;
   height: var(--window-size);
   width: var(--window-size);

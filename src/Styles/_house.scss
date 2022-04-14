@@ -32,7 +32,7 @@
 }
 
 .window {
-  background-color: var(--color-sky-a);
+  background-image: linear-gradient(var(--color-sky-b), #5B7687 40%, #4B6270 3%, #33434D);
   margin: .5vw;
   height: var(--window-size);
   width: var(--window-size);
