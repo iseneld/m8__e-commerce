@@ -21,7 +21,7 @@ const UserDisplay = () => {
                     <section className="user-content">
                         <div className="title-icon">
                             <h1 className="user-props-title">Your Properties</h1>
-                            <div className="icon">icon</div>
+                            <div className="icon"></div>
                         </div>
                         <UserProperties />
                     </section>

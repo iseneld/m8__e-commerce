@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
 import AptPopUp from './AptPopUp';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import { Link } from 'react-router-dom';
 
 const Window = () => (
   <>
@@ -25,7 +25,6 @@ const Window = () => (
         </div>
 
       </Popup>
-
     </section>
     {/* <Link to="/apartment" className="window"> */}
 
