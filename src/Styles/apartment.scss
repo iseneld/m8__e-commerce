@@ -3,39 +3,39 @@
     --dark-lilac: #979fdc;
     --dark-blue: #242A5B;
     --dark-blue-faded: rgba(36, 42, 91, 0.6);
-
-}
-
-img {
+  
+ }
+  
+ img {
     width: auto;
     max-width: 95%;
     max-height: 75%;
     margin: 2% 0 2% 0;
-}
-
-
-button {
+ }
+  
+  
+ button {
     background: var(--dark-blue);
     border: none;
-
+  
     color: white;
     padding: 15px 32px;
     border-radius: 8px;
     text-align: center;
-
+  
     display: inline-block;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.buy-button {
+ }
+  
+ .buy-button {
     margin: 3% 0 3% 0;
-}
-
-footer {
+ }
+  
+ footer {
     display: none;
-}
-
-.modal {
+ }
+  
+ .modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -44,80 +44,112 @@ footer {
     background: rgba(247, 247, 247, 0.5);
    /*  rgba(178, 187, 255, 0.5);
     background-color: rgba(91, 136, 116, 0.5); */
-/*     rgba(247, 247, 247, 0.5); */
+ /*     rgba(247, 247, 247, 0.5); */
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-.modal_content {
+  
+ .modal_content {
     height: 85vh;
     width: 80vw;
-    background-color: var(--dark-lilac); 
+    background-color: var(--lilac-background);
   /*   background: rgb(75, 82, 136); */
-    
+   
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-
+  
     border-radius: 8px;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
+   
+  
   }
-
-.apt-display {
+  
+ .apt-display {
     height: 85%;
     width: 90%;
     background: var(--lilac-background);
     border-radius: 8px;
-
-    padding: 5%;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.apt-title {
+ }
+  
+ .apt-title {
     margin-bottom: 1%;
-}
-
-.sale-status {
+ }
+  
+ .sale-status {
     color: rgba(88, 114, 102, 0.8);
-}
-
-.about-apt {
+ }
+  
+ .about-apt {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
+  
     gap: 40%;
-}
-
-ul {
+ }
+  
+ ul {
     list-style: none;
-}
-
-.profile-pages {
+ }
+  
+  
+ /////////// PROFILE PAGE ///////////
+  
+ .profile-pages {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: yellow;
-}
+    padding: 7%;
 
-.about-user {
-    background: blue;
+    gap: 5%;
+ }
+  
+ .about-user {
+    background: var(--dark-lilac);
+    border-radius: 8px;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.user-properties {
+  
+    padding: 5%;
+ }
+  
+ .profile-pic {
+    width: 20vw;
+    height: 30vh;
+    background: var(--dark-blue);
+ }
+  
+ .user-title {
+    font-size: 2rem;
+    margin: 10% 0 5% 0;
+ }
+  
+ .line {
+    width: 90%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+ }
+  
+ .user-list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10% 0 0 0;
+ }
+  
+ .user-properties {
     background: pink;
-}
+ }
+ 

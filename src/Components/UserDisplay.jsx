@@ -7,10 +7,12 @@ const UserDisplay = () => {
             <div className="apt-display">
                 <section className="profile-pages">
                     <section className="about-user">
-                        <img src={require("../Styles/css-content/lgh1.jpeg")} />
-                        <h1>User name</h1>
+                        <div className="profile-pic">
+
+                        </div>
+                        <h1 className="user-title">User name</h1>
                         <div className="line"></div>
-                        <ul>
+                        <ul className="user-list">
                             <li>User since:</li>
                             <li>Properties owned:</li>
                             <li>Properties sold:</li>

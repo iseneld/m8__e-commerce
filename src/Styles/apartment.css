@@ -57,7 +57,7 @@ footer {
 .modal_content {
   height: 85vh;
   width: 80vw;
-  background-color: var(--dark-lilac);
+  background-color: var(--lilac-background);
   /*   background: rgb(75, 82, 136); */
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -78,7 +78,6 @@ footer {
   width: 90%;
   background: var(--lilac-background);
   border-radius: 8px;
-  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,11 +133,13 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: yellow;
+  padding: 7%;
+  gap: 5%;
 }
 
 .about-user {
-  background: blue;
+  background: var(--dark-lilac);
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,6 +153,37 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5%;
+}
+
+.profile-pic {
+  width: 20vw;
+  height: 30vh;
+  background: var(--dark-blue);
+}
+
+.user-title {
+  font-size: 2rem;
+  margin: 10% 0 5% 0;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.user-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10% 0 0 0;
 }
 
 .user-properties {
