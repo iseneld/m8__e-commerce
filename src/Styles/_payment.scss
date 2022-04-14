@@ -1,22 +1,35 @@
 .shop-wrap {
-  margin: 1rem;
+  margin: 2rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: var(--color-2b);
   border-radius: 1rem;
+  h1 {
+    margin: 2rem;
+    text-align: center;
+  }
+  }
+  
+  .breadcrumb {
+    a {
+      color: black;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 }
 
 .shop {
-  padding: 2rem;
-  border-radius: .75rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .shop2 {
-  padding: 2rem;
   display: flex;
   flex-direction: row;
   gap: 4rem;
