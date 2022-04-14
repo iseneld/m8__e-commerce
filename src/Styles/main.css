@@ -153,7 +153,7 @@ form {
 }
 
 .window {
-  background-color: var(--color-dark);
+  background-color: var(--color-sky-a);
   margin: .5vw;
   height: var(--window-size);
   width: var(--window-size);
@@ -183,7 +183,7 @@ form {
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
   --color-2b: #97C5B1;
-  --color-2c: #63AB8B;
+  --color-2c: #63AF8E;
   --color-dark: #3f6c59;
   --color-sky-a: #97CAD1;
   --color-sky-b: #95AFDE;
@@ -250,6 +250,8 @@ header {
 }
 
 header div {
+  border-radius: .5rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,6 +260,9 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0.5rem 0.3rem 0 var(--color-2c);
+          box-shadow: 0.5rem 0.3rem 0 var(--color-2c);
 }
 
 header div nav {

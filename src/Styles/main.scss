@@ -7,7 +7,7 @@
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
   --color-2b: #97C5B1;
-  --color-2c: #63AB8B;
+  --color-2c: #63AF8E;
   --color-dark: #3f6c59;
   --color-sky-a: #97CAD1;
   --color-sky-b: #95AFDE;
@@ -56,10 +56,14 @@ header {
 
   z-index: 10;
   div {
+    border-radius: .5rem;
+    padding: 0 1rem;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     
+    background-color: var(--color-white);
+    box-shadow: .5rem .3rem 0 var(--color-2c);
     nav {
       display: flex;
       align-items: center;
