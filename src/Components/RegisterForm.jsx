@@ -16,6 +16,8 @@ function RegisterForm() {
       <section className="register-form">
         <h1 className="form-heading">REGISTER USER</h1>
         <form className="form"> {/* onSubmit={onSubmit} */}
+
+          <h5 className="form-title">UserName</h5>
           <div className="form-group">
             <input
               type='text'
@@ -27,6 +29,7 @@ function RegisterForm() {
             //   onChange={onChange}
             />
           </div>
+          <h5 className="form-title">Email</h5>
           <div className="form-group">
             <input
               type='email'
@@ -38,6 +41,7 @@ function RegisterForm() {
             //   onChange={onChange}
             />
           </div>
+          <h5 className="form-title">Password</h5>
           <div className="form-group">
             <input
               type='password'
@@ -49,6 +53,7 @@ function RegisterForm() {
             //   onChange={onChange}
             />
           </div>
+          <h5 className="form-title">Confirm password</h5>
           <div className="form-group">
             <input
               type='password'

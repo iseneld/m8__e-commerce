@@ -15,6 +15,9 @@
     align-items: center;
 } */
 
+
+
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -51,7 +54,7 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -59,17 +62,23 @@
 .form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    margin: 5%;
+}
+
+input {
+    width: 150%;
+    height: 150%;
 }
 
 .form-heading {
     margin:0;
+    align-self: center;
 }
 
 
 
 .form-group {
-    background-color: var(--dark-blue);
-    margin: 2%;
+    margin-bottom: 5%;
 }
