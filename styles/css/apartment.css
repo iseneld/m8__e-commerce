@@ -1,0 +1,181 @@
+:root {
+  --lilac-background: rgba(178, 187, 255, 1);
+  --dark-lilac: #979fdc;
+  --dark-blue: #242A5B;
+  --dark-blue-faded: rgba(36, 42, 91, 0.6);
+  --dark-lilac-faded: #828ac5;
+}
+
+img {
+  width: auto;
+  max-width: 95%;
+  max-height: 75%;
+  margin: 2% 0 2% 0;
+}
+
+button {
+  background: var(--dark-blue);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buy-button {
+  margin: 3% 0 3% 0;
+}
+
+footer {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(247, 247, 247, 0.5);
+  /*  rgba(178, 187, 255, 0.5);
+    background-color: rgba(91, 136, 116, 0.5); */
+  /*     rgba(247, 247, 247, 0.5); */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_content {
+  height: 85vh;
+  width: 80vw;
+  background-color: var(--lilac-background);
+  /*   background: rgb(75, 82, 136); */
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apt-display {
+  height: 85%;
+  width: 90%;
+  background: var(--lilac-background);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.apt-title {
+  margin-bottom: 1%;
+}
+
+.sale-status {
+  color: rgba(88, 114, 102, 0.8);
+}
+
+.about-apt {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40%;
+}
+
+ul {
+  list-style: none;
+}
+
+.profile-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
+  gap: 5%;
+}
+
+.about-user {
+  background: var(--dark-lilac);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 50%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 80%;
+  background: var(--dark-blue);
+}
+
+.user-title {
+  font-size: 2rem;
+  margin: 10% 0 5% 0;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin: 10% 0 0 0;
+}
+
+.user-properties {
+  background: var(--dark-lilac-faded);
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.user-properties-listed {
+  border: 1px black solid;
+  width: 100%;
+  max-height: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0 0 0;
+}
+
+.title-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-props-title {
+  font-size: 2rem;
+}
+
+.user-content {
+  background: var(--dark-lilac);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 50%;
+}
+
+.about-property-list {
+  display: flex;
+  flex-direction: row !important;
+}
+/*# sourceMappingURL=apartment.css.map */

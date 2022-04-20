@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,kBAAkB,CAAA,uBAAC;EACnB,YAAY,CAAA,QAAC;EACb,WAAW,CAAA,QAAC;EACZ,iBAAiB,CAAA,sBAAC;EAClB,kBAAkB,CAAA,QAAC;CAErB;;AAEF,AAAA,QAAQ,CAAC;EACT,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,KAAK;CACX;;AAMD,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "../../src/Styles/loginRegister.scss"
+    ],
+    "names": [],
+    "file": "loginRegister.css"
+}
