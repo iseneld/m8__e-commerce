@@ -8,6 +8,7 @@ import Payment2 from "./Pages/Payment2";
 import Payment3 from "./Pages/Payment3";
 import UserPage from "./Pages/UserPage";
 import 'reactjs-popup/dist/index.css';
+import RegisterPage from "./Pages/RegisterPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pay3" element={<Payment3 />} />
         <Route path="/apartment" element={<Apartment/>} />
         <Route path="/user" element={<UserPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
       <Footer />
     </>
