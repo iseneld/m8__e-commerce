@@ -3,7 +3,9 @@ import '../Styles/register.scss';
 
 const RegisterPage = () => (
   <>
-    <RegisterForm />
+    <section className="wrapper">
+      <RegisterForm />
+    </section>
   </>
 );
 
