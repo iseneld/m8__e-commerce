@@ -1,7 +1,35 @@
 import { useState, useEffect } from 'react'
 import { BiArrowBack } from "react-icons/bi";
 
+
 function RegisterForm() {
+
+ async function RegisterRequest(e) {
+  e.preventDefault();
+  if (formData.password === formData.password2) {
+      const settings = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    }
+
+    try {
+      const registerUser = await fetch('http://localhost:5000/users/register', settings)
+      const user = await registerUser.json()
+      console.log('Response: ', user);
+    } catch(error) {
+      console.log(error);
+    }
+
+    
+
+  } else {
+    return console.log('Invalid password');
+  }
+}
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -9,14 +37,20 @@ function RegisterForm() {
     password2: '',
   })
 
-  const { username, email, password, password2 } = formData
+  function onChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
+  useEffect(() => {
+    console.log(formData);
+  }, [formData])
+  
   return (
     <section className="wrapper-content">
       {/*       <section className="form-wrapper"> */}
       <section className="register-form">
         <h1 className="heading heading--formHeading">REGISTER USER</h1>
-        <form className="form"> {/* onSubmit={onSubmit} */}
+        <form className="form" onSubmit={RegisterRequest}> 
 
           <h5 className="form-title">Username</h5>
           <input
@@ -24,9 +58,9 @@ function RegisterForm() {
             className="form-control"
             id="username"
             name="username"
-            value={username}
+            value={formData.username}
             placeholder="Username"
-          //   onChange={onChange}
+            onChange={onChange}
           />
           <h5 className="form-title">Email</h5>
           <input
@@ -34,9 +68,9 @@ function RegisterForm() {
             className="form-control"
             id="email"
             name="email"
-            value={email}
+            value={formData.email}
             placeholder="Email"
-          //   onChange={onChange}
+            onChange={onChange}
           />
           <h5 className="form-title">Password</h5>
           <input
@@ -44,9 +78,9 @@ function RegisterForm() {
             className="form-control"
             id="password"
             name="password"
-            value={password}
+            value={formData.password}
             placeholder="Password"
-          //   onChange={onChange}
+            onChange={onChange}
           />
           <h5 className="form-title">Confirm password</h5>
           <input
@@ -54,9 +88,9 @@ function RegisterForm() {
             className="form-control"
             id="password2"
             name="password2"
-            value={password2}
+            value={formData.password2}
             placeholder="Confirm password"
-          //   onChange={onChange}
+            onChange={onChange}
           />
           <div className="btns">
             <button className="back-btn"><BiArrowBack size={30} /></button>
