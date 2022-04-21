@@ -42,6 +42,9 @@
         margin-top: 12%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+    &--loginHeading {
+        margin-top: 0;
+    }
 }
 
 .register-form {
@@ -61,6 +64,10 @@
         color: var(--dark-blue);
         font-size: 1rem;
         margin-bottom: 1%;
+    }
+
+    &--login-form {
+       justify-content: space-around;
     }
 }
 
@@ -94,11 +101,20 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus  {
     color: var(--dark-lilac);
 }
 
+input[type=password] {
+    margin-bottom: 1%;
+}
+
+.forgot-txt {
+    font-size:x-small;
+    font-style: italic;
+}
+
 .btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 4% 0 8% 0;
+    margin: 10% 0 8% 0;
 /*     margin-bottom: 8%; */
     width: 100%;
 

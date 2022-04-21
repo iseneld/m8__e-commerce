@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: var(----bg-gradient);
+  background: var(--bg-gradient);
 }
 
 #root {
@@ -119,4 +119,6 @@ li {
 
 .logo {
   width: 200px;
+  filter: drop-shadow(2px 4px 9px rgba(0, 0, 0, 0.25));
+backdrop-filter: blur(4px);
 }
