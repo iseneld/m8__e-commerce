@@ -3,14 +3,14 @@ import UserProperties from './UserProperties';
 
 const UserDisplay = () => {
     return (
-        <>
+        <div className="profile-container">
             <div className="apt-display">
                 <section className="profile-pages">
                     <section className="about-user">
                         <div className="profile-pic">
 
                         </div>
-                        <h1 className="user-title">User name</h1>
+                        <h1 className="user-title">Username</h1>
                         <div className="line"></div>
                         <ul className="user-list">
                             <li>User since:</li>
@@ -29,7 +29,7 @@ const UserDisplay = () => {
 
             </div>
 
-        </>
+        </div>
     )
 }
 
