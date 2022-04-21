@@ -7,20 +7,17 @@
   
  }
 
-/* .form-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-} */
-
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 
+}
+
+@font-face {
+    font-family: springwoodFont;
+    src: url("/public/fonts/Springwood.ttf");
 }
 
 .wrapper-content {
@@ -37,9 +34,12 @@
 
 .heading {
     &--formHeading {
+        font-family: springwoodFont;
+        color: white;
         font-size: 2rem;
         align-self: center;
         margin-top: 12%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 }
 
