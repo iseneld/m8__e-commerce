@@ -231,7 +231,8 @@
 .heading--formHeading {
   font-family: springwoodFont;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: .2px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
