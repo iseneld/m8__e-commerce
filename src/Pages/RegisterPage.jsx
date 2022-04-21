@@ -1,5 +1,5 @@
 import RegisterForm from "../Components/RegisterForm";
-import '../Styles/register.scss';
+import '../Styles/main.css';
 
 const RegisterPage = () => (
   <>
