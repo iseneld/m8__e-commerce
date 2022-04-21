@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { BiArrowBack } from "react-icons/bi";
+import {UserContext} from "../App";
 
 
 function RegisterForm() {
 
+  const {setToken} = useContext(UserContext);
  async function RegisterRequest(e) {
   e.preventDefault();
   if (formData.password === formData.password2) {
@@ -19,6 +21,8 @@ function RegisterForm() {
       const registerUser = await fetch('http://localhost:5000/users/register', settings)
       const user = await registerUser.json()
       console.log('Response: ', user);
+      setToken(user.token);
+
     } catch(error) {
       console.log(error);
     }
@@ -29,7 +33,6 @@ function RegisterForm() {
     return console.log('Invalid password');
   }
 }
-
   const [formData, setFormData] = useState({
     username: '',
     email: '',
