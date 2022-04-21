@@ -38,7 +38,7 @@ function LoginForm() {
                     <p className="forgot-txt">Forgot Password?</p>
                     <div className="btns">
                         <button className="back-btn"><BiArrowBack size={30} /></button>
-                        <button type="submit" className="btn">Continue</button>
+                        <button type="submit" className="btn">Login</button>
                     </div>
                 </form>
             </section>
