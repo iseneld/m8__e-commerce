@@ -1,6 +1,7 @@
 @import '_payment.scss';
 @import '_house.scss';
 @import '_register.scss';
+@import '_userpage.scss';
 
 
 :root {
@@ -25,6 +26,11 @@
 @font-face {
   font-family: nunitoFont;
   src: url("/public/fonts/Nunito.ttf");
+}
+
+@font-face {
+  font-family: springwoodFont;
+  src: url("/public/fonts/Springwood.ttf");
 }
 
 * {
