@@ -14,10 +14,10 @@ function RegisterForm() {
     <section className="wrapper-content">
       {/*       <section className="form-wrapper"> */}
       <section className="register-form">
-        <h1 className="form-heading">REGISTER USER</h1>
+        <h1 className="heading heading--formHeading">REGISTER USER</h1>
         <form className="form"> {/* onSubmit={onSubmit} */}
 
-          <h5 className="form-title">UserName</h5>
+          <h5 className="form-title">Username</h5>
           <input
             type='text'
             className="form-control"
@@ -57,7 +57,10 @@ function RegisterForm() {
             placeholder="Confirm password"
           //   onChange={onChange}
           />
-          <button type="submit" className="btn">Continue</button>
+          <div className="btns">
+            <button>back</button>
+            <button type="submit" className="btn">Continue</button>
+          </div>
         </form>
       </section>
       {/*       </section> */}

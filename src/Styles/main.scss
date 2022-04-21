@@ -51,7 +51,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 2rem;
+  padding: 1rem 0rem 0rem 1rem;
 
   display: flex;
   align-items: center;
@@ -59,8 +59,8 @@ header {
 
   z-index: 10;
   div {
-    border-radius: .5rem;
-    padding: 0 1rem;
+    border-radius: 0px 0px 0px 8px;
+    margin-top: -1rem;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;

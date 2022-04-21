@@ -229,15 +229,16 @@
   border-radius: 8px;
 }
 
-/* 
-.form-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
+.heading--formHeading {
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20%;
 }
- */
+
 .register-form {
-  background-color: var(--dark-lilac-faded);
+  background-color: var(--dark-lilac);
   padding: 10%;
   max-width: 80%;
   height: 80%;
@@ -255,6 +256,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.register-form .form-title {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  margin-bottom: 1%;
 }
 
 .form {
@@ -277,13 +284,53 @@
 
 input {
   width: 100%;
+  padding: 2%;
+  margin-bottom: 4.5%;
+  outline: none;
 }
 
-.form-heading {
-  margin: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+input[type=text], input[type=password], input[type=email] {
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  border: 3px solid var(--dark-blue);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: var(--lilac-background);
+}
+
+::-webkit-input-placeholder {
+  color: var(--dark-lilac);
+}
+
+:-ms-input-placeholder {
+  color: var(--dark-lilac);
+}
+
+::-ms-input-placeholder {
+  color: var(--dark-lilac);
+}
+
+::placeholder {
+  color: var(--dark-lilac);
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.btns .btn {
+  font-size: 1rem;
 }
 
 .form-group {
@@ -348,7 +395,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 2rem;
+  padding: 1rem 0rem 0rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,8 +409,8 @@ header {
 }
 
 header div {
-  border-radius: .5rem;
-  padding: 0 1rem;
+  border-radius: 0px 0px 0px 8px;
+  margin-top: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
