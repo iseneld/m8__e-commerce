@@ -9,6 +9,7 @@ import Payment3 from "./Pages/Payment3";
 import UserPage from "./Pages/UserPage";
 import 'reactjs-popup/dist/index.css';
 import RegisterPage from "./Pages/RegisterPage";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/apartment" element={<Apartment/>} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer />
     </>
@@ -29,3 +31,4 @@ function App() {
 }
 
 export default App;
+
