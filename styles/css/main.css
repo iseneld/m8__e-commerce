@@ -52,7 +52,7 @@
   padding: 0;
 }
 
-form {
+.payment-form {
   background-color: var(--dark-lilac-faded);
   padding: 2rem;
   height: 100%;
@@ -143,31 +143,108 @@ form {
   --dark-lilac-faded: #828ac5;
 }
 
-@font-face {
-  font-family: SpringwoodFont;
-  src: url("../../public/fonts/Springwood.ttf");
-}
-
-.form-container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
 .wrapper {
   display: flex;
-  width: 30%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: springwoodFont;
+  src: url("/public/fonts/Springwood.ttf");
+}
+
+.wrapper-content {
+  display: flex;
+  max-width: 50%;
   height: 90%;
   background-color: var(--lilac-background);
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 
-.heading {
-  font-family: SpringwoodFont;
-  font-size: 48px;
+.heading--formHeading {
+  font-family: springwoodFont;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: .2px;
+  align-self: center;
+  margin-top: 12%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.register-form {
+  background-color: var(--dark-lilac);
+  padding: 10%;
+  max-width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.register-form .form-title {
+  color: var(--dark-blue);
+  font-size: 1rem;
+  margin-bottom: 1%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5%;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 4.5%;
+  outline: none;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  border: 3px solid var(--dark-blue);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: var(--lilac-background);
+}
+
+::placeholder {
+  color: var(--dark-lilac);
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4% 0 8% 0;
+  /*     margin-bottom: 8%; */
+  width: 100%;
+}
+
+.btns .back-btn {
+  padding: 1% 2% 1% 2%;
+  background-color: var(--dark-lilac);
+  border: 3px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+.btns .btn {
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 5%;
 }
 
 :root {
@@ -181,8 +258,10 @@ form {
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --dark-blue: #242A5B;
+  --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
+  --bg-gradient:linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
 * {
@@ -198,7 +277,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: var(--color-sky-a);
+  background: var(----bg-gradient);
 }
 
 #root {
@@ -215,7 +294,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 2rem;
+  padding: 1rem 0rem 0rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -223,13 +302,12 @@ header {
 }
 
 header div {
-  border-radius: .5rem;
-  padding: 0 1rem;
+  border-radius: 0px 0px 0px 8px;
+  margin-top: -1rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: var(--color-white);
-  box-shadow: 0.5rem 0.3rem 0 var(--color-2c);
+  background-color: var(--nav-blue);
 }
 
 header div nav {
@@ -241,9 +319,10 @@ header div nav a {
   display: flex;
   align-items: center;
   margin: 1rem;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-size: 1.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header div section {
@@ -256,7 +335,7 @@ header div section {
 
 main {
   padding-top: 10rem;
-  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
+  background: var(----bg-gradient);
 }
 
 footer {

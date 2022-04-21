@@ -19,6 +19,7 @@
   --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
+  --bg-gradient:linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
 * {
@@ -34,7 +35,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
+  background: var(----bg-gradient);
 }
 
 #root {
@@ -97,7 +98,7 @@ header {
 
 main {
   padding-top: 10rem;
-  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
+  background: var(----bg-gradient);
 }
 footer {
   width: 100%;
