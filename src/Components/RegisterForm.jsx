@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { BiArrowBack } from "react-icons/bi";
 
 function RegisterForm() {
   const [formData, setFormData] = useState({
@@ -58,7 +59,7 @@ function RegisterForm() {
           //   onChange={onChange}
           />
           <div className="btns">
-            <button>back</button>
+            <button className="back-btn"><BiArrowBack size={30} /></button>
             <button type="submit" className="btn">Continue</button>
           </div>
         </form>

@@ -211,6 +211,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .wrapper-content {
@@ -234,7 +235,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 20%;
+  margin-top: 12%;
 }
 
 .register-form {
@@ -326,7 +327,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 4% 0 8% 0;
+  /*     margin-bottom: 8%; */
   width: 100%;
+}
+
+.btns .back-btn {
+  padding: 1% 2% 1% 2%;
+  background-color: var(--dark-lilac);
+  border: 3px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .btns .btn {
@@ -348,6 +358,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --dark-blue: #242A5B;
+  --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
 }
@@ -368,7 +379,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
-  background: var(--color-sky-a);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 70, 134, 0.3)), to(rgba(0, 163, 255, 0))), #B2BBFF;
+  background: linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
 #root {
@@ -419,9 +431,7 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--color-white);
-  -webkit-box-shadow: 0.5rem 0.3rem 0 var(--color-2c);
-          box-shadow: 0.5rem 0.3rem 0 var(--color-2c);
+  background-color: var(--nav-blue);
 }
 
 header div nav {
@@ -441,9 +451,10 @@ header div nav a {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-size: 1.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header div section {

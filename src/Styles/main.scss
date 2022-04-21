@@ -16,6 +16,7 @@
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --dark-blue: #242A5B;
+  --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
 }
@@ -33,7 +34,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: var(--color-sky-a);
+  background: linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
 #root {
@@ -58,6 +59,7 @@ header {
   justify-content: space-between;
 
   z-index: 10;
+
   div {
     border-radius: 0px 0px 0px 8px;
     margin-top: -1rem;
@@ -65,8 +67,8 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     
-    background-color: var(--color-white);
-    box-shadow: .5rem .3rem 0 var(--color-2c);
+    background-color: var(--nav-blue);
+
     nav {
       display: flex;
       align-items: center;
@@ -75,9 +77,10 @@ header {
         display: flex;
         align-items: center;
         margin: 1rem;
-        color: var(--color-dark);
+        color: var(--color-white);
         font-size: 1.5rem;
         text-decoration: none;
+        cursor: pointer;
       }
     }
     
