@@ -84,11 +84,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 5%;
+  width: 100%;
 }
 
 input {
-  width: 150%;
-  height: 150%;
+  width: 100%;
 }
 
 .form-heading {
