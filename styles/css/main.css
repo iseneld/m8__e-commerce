@@ -155,6 +155,11 @@
   src: url("/public/fonts/Springwood.ttf");
 }
 
+@font-face {
+  font-family: nunitoFont;
+  src: url("/public/fonts/Nunito.ttf");
+}
+
 .wrapper-content {
   display: flex;
   max-width: 50%;
@@ -175,6 +180,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.heading--loginHeading {
+  margin-top: 0;
+}
+
 .register-form {
   background-color: var(--dark-lilac);
   padding: 10%;
@@ -191,6 +200,10 @@
   color: var(--dark-blue);
   font-size: 1rem;
   margin-bottom: 1%;
+}
+
+.register-form--login-form {
+  justify-content: space-around;
 }
 
 .form {
@@ -223,11 +236,20 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   color: var(--dark-lilac);
 }
 
+input[type=password] {
+  margin-bottom: 1%;
+}
+
+.forgot-txt {
+  font-size: x-small;
+  font-style: italic;
+}
+
 .btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 4% 0 8% 0;
+  margin: 10% 0 8% 0;
   /*     margin-bottom: 8%; */
   width: 100%;
 }
@@ -264,11 +286,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   --bg-gradient:linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
+@font-face {
+  font-family: nunitoFont;
+  src: url("/public/fonts/Nunito.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: nunitoFont;
 }
 
 body {
@@ -277,7 +304,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: var(----bg-gradient);
+  background: var(--bg-gradient);
 }
 
 #root {
@@ -357,5 +384,7 @@ footer li {
 
 .logo {
   width: 200px;
+  filter: drop-shadow(2px 4px 9px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(4px);
 }
 /*# sourceMappingURL=main.css.map */

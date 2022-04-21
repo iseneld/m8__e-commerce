@@ -22,11 +22,16 @@
   --bg-gradient:linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
 }
 
+@font-face {
+  font-family: nunitoFont;
+  src: url("/public/fonts/Nunito.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: nunitoFont;
 }
 
 body {
