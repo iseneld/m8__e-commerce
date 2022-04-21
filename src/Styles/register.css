@@ -1,0 +1,104 @@
+:root {
+  --lilac-background: rgba(178, 187, 255, 1);
+  --dark-lilac: #979fdc;
+  --dark-blue: #242A5B;
+  --dark-blue-faded: rgba(36, 42, 91, 0.6);
+  --dark-lilac-faded: #828ac5;
+}
+
+/* .form-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  height: 90%;
+  background-color: var(--lilac-background);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+}
+
+/* 
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+ */
+.register-form {
+  background-color: var(--dark-lilac-faded);
+  padding: 10%;
+  max-width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5%;
+}
+
+input {
+  width: 150%;
+  height: 150%;
+}
+
+.form-heading {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-group {
+  margin-bottom: 5%;
+}
+/*# sourceMappingURL=register.css.map */

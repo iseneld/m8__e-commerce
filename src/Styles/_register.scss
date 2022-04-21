@@ -7,42 +7,78 @@
   
  }
 
-
-@font-face {
-    font-family: SpringwoodFont;
-    src: url("../../public/fonts/Springwood.ttf");
-  } 
-
-.form-container {
+/* .form-container {
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-}
+} */
+
+
+
 
 .wrapper {
-display: flex;
-width: 30%;
-height: 90%;
-background-color: var(--lilac-background);
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.wrapper-content {
+    display: flex;
+    max-width: 50%;
+    height: 90%;
+    background-color: var(--lilac-background);
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+/* 
 .form-wrapper {
-
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
-
-.heading {
-    font-family: SpringwoodFont;
-    font-size: 48px;;
-}
-
+ */
 .register-form {
+    background-color: var(--dark-lilac-faded);
+    padding: 10%;
+    max-width: 80%;
+    height: 80%;
 
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 5%;
+}
+
+input {
+    width: 150%;
+    height: 150%;
+}
+
+.form-heading {
+    margin:0;
+    align-self: center;
+}
+
+
 
 .form-group {
-
+    margin-bottom: 5%;
 }
