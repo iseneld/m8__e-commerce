@@ -4,7 +4,9 @@ import { AiOutlineHome } from "react-icons/ai"
 
 const UserDisplay = () => {
     return (
+        <div className="profile-container">
         <div className='user-container'>
+
             <div className="apt-display">
                 <section className="profile-pages">
                     <section className="about-user">
@@ -27,7 +29,7 @@ const UserDisplay = () => {
                         <UserProperties />
                     </section>
                 </section>
-
+              </div>
             </div>
 
         </div>

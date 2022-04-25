@@ -6,7 +6,7 @@ import "../Styles/main.css";
 const UserPage = () => {
     return (
         <>
-        <UserDisplay />
+            <UserDisplay />
         </>
     )
 }

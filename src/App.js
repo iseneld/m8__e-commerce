@@ -10,10 +10,21 @@ import UserPage from "./Pages/UserPage";
 import 'reactjs-popup/dist/index.css';
 import RegisterPage from "./Pages/RegisterPage";
 import LoginPage from "./Pages/LoginPage";
+import {createContext, useEffect, useState} from "react";
+
+export const UserContext = createContext(); 
+
+
 
 function App() {
+
+  const [token, setToken] = useState("");
+  useEffect(()=>{
+    console.log("Token: ", token);
+  }, [token])
+ 
   return (
-    <>
+    <UserContext.Provider value={{token, setToken}}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +37,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 }
 
