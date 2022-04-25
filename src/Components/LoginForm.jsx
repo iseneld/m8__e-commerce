@@ -35,7 +35,7 @@ function LoginForm() {
         }
 
 
-        // console.log(JSON.parse(localStorage.getItem('currentUser')));
+        console.log(JSON.parse(localStorage.getItem('currentUser')));
     }
 
     return (
@@ -43,7 +43,7 @@ function LoginForm() {
             {/*       <section className="form-wrapper"> */}
             <section className="register-form register-form--login-form">
                 <h1 className="heading heading--formHeading heading--loginHeading">Login</h1>
-                <form className="form" onSubmit={onSubmit} > 
+                <form className="form" onSubmit={onSubmit} >
                     <h5 className="form-title">Username</h5>
                     <input
                         type='text'

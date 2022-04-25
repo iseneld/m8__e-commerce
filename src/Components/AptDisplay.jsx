@@ -9,7 +9,7 @@ const AptDisplay = () => {
                 <section className="about-apt">
                     <h4>ID:</h4>
                     <h4>Owner:</h4>
-                    <h4>Price:</h4>
+                    <h4>Price: test</h4>
                 </section>
                 <button className="buy-button">BUY</button>
 
