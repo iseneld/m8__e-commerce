@@ -6,11 +6,8 @@ import "../Styles/apartment.css";
 const Apartment = () => {
     return (
         <>
-            <div className="modal">
-                <div className="modal_content">
-                    <AptDisplay />
-                </div>
-
+            <div>
+            <AptDisplay />
             </div>
 
         </>

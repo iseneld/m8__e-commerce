@@ -3,7 +3,7 @@ import UserProperties from './UserProperties';
 
 const UserDisplay = () => {
     return (
-        <div className="profile-container">
+        <div className="article-container">
             <div className="apt-display">
                 <section className="profile-pages">
                     <section className="about-user">
