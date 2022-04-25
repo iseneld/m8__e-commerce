@@ -150,11 +150,6 @@
   overflow: hidden;
 }
 
-@font-face {
-  font-family: springwoodFont;
-  src: url("/public/fonts/Springwood.ttf");
-}
-
 .wrapper-content {
   display: flex;
   max-width: 50%;
@@ -169,7 +164,7 @@
   font-family: springwoodFont;
   color: white;
   font-size: 2.5rem;
-  letter-spacing: .2px;
+  letter-spacing: .5px;
   align-self: center;
   margin-top: 12%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -265,7 +260,7 @@ input[type=password] {
   margin-bottom: 5%;
 }
 
-.article-container {
+.profile-container {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -371,6 +366,171 @@ input[type=password] {
 :root {
   --lilac-background: rgba(178, 187, 255, 1);
   --dark-lilac: #979fdc;
+  --dark-blue: #242a5b;
+  --dark-blue-faded: rgba(36, 42, 91, 0.6);
+  --dark-lilac-faded: #828ac5;
+}
+
+.user-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+}
+
+.profile-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7%;
+  gap: 5%;
+}
+
+.about-user {
+  background: var(--dark-lilac);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 70%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 80%;
+  background: var(--dark-blue);
+}
+
+.user-title {
+  font-size: 2rem;
+  margin: 10% 0 5% 0;
+}
+
+.line {
+  width: 90%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0 0 0;
+  justify-content: space-around;
+}
+
+.user-list li {
+  font-size: large;
+}
+
+.property-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 2%;
+  width: 40%;
+}
+
+.property-img img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.user-properties {
+  background: var(--dark-lilac-faded);
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.user-properties-listed {
+  border: 1px black solid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0 0 0;
+}
+
+.apartment-cost {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.apartment-cost img {
+  max-width: 10%;
+  max-height: auto;
+}
+
+.view-sell-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.view-sell-btns .btn {
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  background-color: var(--dark-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.user-props-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  font-family: springwoodFont;
+  color: white;
+}
+
+.user-content {
+  background: var(--dark-lilac);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 70%;
+  width: 40%;
+}
+
+.about-property-list {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row !important;
+}
+
+:root {
+  --lilac-background: rgba(178, 187, 255, 1);
+  --dark-lilac: #979fdc;
   --dark-blue: #242A5B;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
@@ -429,95 +589,6 @@ ul {
   list-style: none;
 }
 
-.profile-pages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 7%;
-  gap: 5%;
-}
-
-.about-user {
-  background: var(--dark-lilac);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  height: 50%;
-}
-
-.profile-pic {
-  width: 100%;
-  height: 80%;
-  background: var(--dark-blue);
-}
-
-.user-title {
-  font-size: 2rem;
-  margin: 10% 0 5% 0;
-}
-
-.line {
-  width: 90%;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.user-list {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  margin: 10% 0 0 0;
-}
-
-.user-properties {
-  background: var(--dark-lilac-faded);
-  padding: 5%;
-  margin-top: 5%;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-}
-
-.user-properties-listed {
-  border: 1px black solid;
-  width: 100%;
-  max-height: 60%;
-  display: flex;
-  flex-direction: row;
-  margin: 5% 0 0 0;
-}
-
-.title-icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.user-props-title {
-  font-size: 2rem;
-}
-
-.user-content {
-  background: var(--dark-lilac);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  height: 50%;
-}
-
-.about-property-list {
-  display: flex;
-  flex-direction: row !important;
-}
-
 :root {
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
@@ -538,6 +609,11 @@ ul {
 @font-face {
   font-family: nunitoFont;
   src: url("/public/fonts/Nunito.ttf");
+}
+
+@font-face {
+  font-family: springwoodFont;
+  src: url("/public/fonts/Springwood.ttf");
 }
 
 * {
