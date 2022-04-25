@@ -186,6 +186,31 @@ form {
   width: calc(var(--window-size) / 1.5);
 }
 
+.popup-content {
+  margin: auto;
+  background-color: var(--color-sky-b);
+  width: 50%;
+  padding: 20px;
+}
+
+.popup-arrow {
+  color: white;
+}
+
+[role='tooltip'].popup-content {
+  width: 200px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
 :root {
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
