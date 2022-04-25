@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import UserProperties from './UserProperties';
+import { AiOutlineHome } from "react-icons/ai"
 
 const UserDisplay = () => {
     return (
         <div className="profile-container">
+        <div className='user-container'>
+
             <div className="apt-display">
                 <section className="profile-pages">
                     <section className="about-user">
@@ -21,12 +24,12 @@ const UserDisplay = () => {
                     <section className="user-content">
                         <div className="title-icon">
                             <h1 className="user-props-title">Your Properties</h1>
-                            <div className="icon"></div>
+                            <div className="icon"><AiOutlineHome size={50} /></div>
                         </div>
                         <UserProperties />
                     </section>
                 </section>
-
+              </div>
             </div>
 
         </div>
