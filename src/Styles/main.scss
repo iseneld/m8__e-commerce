@@ -1,5 +1,8 @@
 @import '_payment.scss';
 @import '_house.scss';
+@import '_register.scss';
+@import '_userpage.scss';
+
 
 :root {
   // COLOR PALETTE
@@ -14,14 +17,27 @@
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --dark-blue: #242A5B;
+  --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
+  --dark-lilac-faded: #828ac5;
+  --bg-gradient:linear-gradient(180deg, rgba(0, 70, 134, 0.3) 0%, rgba(0, 163, 255, 0) 100%), #B2BBFF;
+}
+
+@font-face {
+  font-family: nunitoFont;
+  src: url("/public/fonts/Nunito.ttf");
+}
+
+@font-face {
+  font-family: springwoodFont;
+  src: url("/public/fonts/Springwood.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: nunitoFont;
 }
 
 body {
@@ -30,7 +46,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   overflow-x: hidden;
-  background: var(--color-sky-a);
+  background: var(--bg-gradient);
 }
 
 #root {
@@ -48,22 +64,23 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 2rem;
+  padding: 1rem 0rem 0rem 1rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   z-index: 10;
+
   div {
-    border-radius: .5rem;
-    padding: 0 1rem;
+    border-radius: 0px 0px 0px 8px;
+    margin-top: -1rem;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     
-    background-color: var(--color-white);
-    box-shadow: .5rem .3rem 0 var(--color-2c);
+    background-color: var(--nav-blue);
+
     nav {
       display: flex;
       align-items: center;
@@ -72,9 +89,10 @@ header {
         display: flex;
         align-items: center;
         margin: 1rem;
-        color: var(--color-dark);
+        color: var(--color-white);
         font-size: 1.5rem;
         text-decoration: none;
+        cursor: pointer;
       }
     }
     
@@ -91,7 +109,7 @@ header {
 
 main {
   padding-top: 10rem;
-  background-image: linear-gradient(var(--color-sky-a), var(--color-sky-b));
+  background: var(----bg-gradient);
 }
 footer {
   width: 100%;
@@ -112,4 +130,6 @@ li {
 
 .logo {
   width: 200px;
+  filter: drop-shadow(2px 4px 9px rgba(0, 0, 0, 0.25));
+backdrop-filter: blur(4px);
 }
