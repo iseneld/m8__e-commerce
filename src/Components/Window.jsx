@@ -3,7 +3,6 @@ import Popup from 'reactjs-popup';
 import { API_BASE_URL } from "../config";
 import 'reactjs-popup/dist/index.css';
 import { Link } from 'react-router-dom';
-import apartmentIMG from "../Styles/css-content/lgh1.jpeg";
 
 const Window = ({apartment}) => {
   const apartmentProp = apartment;
@@ -15,13 +14,14 @@ const Window = ({apartment}) => {
         <Popup trigger={<button className="window-btn"> </button>}
           position="right center" contentStyle={{ width: "300px" }}>
           <div>
-            <h1>{`Apartment ${apartmentProp && apartmentProp.ownerName}`}</h1>
+            { apartmentProp && <h1>{`Apartment ${apartmentProp.aptNumber}`}</h1>}
             <section className="pop-up-apt-display">
               <div className="pop-up-apt-image">
                 { apartmentProp && <img src={`${API_BASE_URL}${apartmentProp.aptImg}`} alt="hej" /> }
               </div>
               <section className="abt-apartment">
-                <h3>{apartmentProp && apartmentProp.ownerName}</h3>
+              {apartmentProp && apartmentProp.ownerName === "For sale!" && (<h3>For sale!</h3>)}
+            {apartmentProp && apartmentProp.ownerName != "For sale!" && (<h3>Owned by {apartmentProp.ownerName}</h3>)}
                 <ul>
                   <li><p>{`Prize: $${apartmentProp && apartmentProp.price}`} </p></li>
                   <li><p>Your coins: </p></li>
