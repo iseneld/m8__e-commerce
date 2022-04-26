@@ -544,8 +544,9 @@ footer {
 
 img {
   width: auto;
-  max-width: 90%;
+  max-width: 47rem;
   max-height: 75%;
+  border-radius: 8px;
 }
 
 .sell-button {
@@ -573,10 +574,12 @@ img {
 
 .apt-display--your-property {
   height: unset;
+  padding: 1rem 0;
 }
 
 .apt-title {
-  margin-bottom: 1%;
+  margin-bottom: 1rem;
+  font-size: 25px;
 }
 
 .sale-status {
@@ -586,9 +589,9 @@ img {
 .about-apt {
   border-radius: 8px;
   width: 70%;
-  height: 80%;
+  height: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   background-color: var(--dark-blue-innerfade);
@@ -597,14 +600,18 @@ img {
 .about-apt-title {
   display: flex;
   width: 90%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
+}
+
+.about-apt-title h2 {
+  font-size: 35px;
 }
 
 .about-apt-desc {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -613,7 +620,7 @@ ul {
 }
 
 .AptBox-frame {
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -622,8 +629,8 @@ ul {
 
 .AptInfo-frame {
   background-color: var(--dark-blue-extra-faded);
-  width: 90%;
-  height: 8rem;
+  width: 47rem;
+  height: 10rem;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -642,27 +649,30 @@ button {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
+.sell-btn {
+  padding: 8px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09) 40%);
+  background-color: #B2BBFF;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
+}
+
 .apt-price-tag {
   display: flex;
   flex-direction: row;
   gap: 3%;
+  align-items: center;
 }
 
 .apt-price-tag img {
-  max-width: 40%;
-  max-height: auto;
+  max-width: 30%;
+  max-height: 40%;
 }
 
-@media only screen and (max-width: 1000px) {
-  .AptBox-frame img {
-    max-width: 90%;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .apt-display--your-property {
-    height: 90%;
-  }
+.apt-price-tag p {
+  font-weight: bold;
 }
 
 :root {

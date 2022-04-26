@@ -12,7 +12,7 @@ function AptInfo() {
                     </div>
                     <div className="about-apt-desc">
                       <p>Low tier apartment <br />Alleyway view</p>
-                      <button className="sell-btn">SELL</button>
+                      <button className="sell-btn">Sell</button>
                     </div>
         </section>
     </div>
