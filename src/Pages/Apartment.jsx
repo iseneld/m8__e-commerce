@@ -7,7 +7,7 @@ const Apartment = () => {
     return (
         <>
             <div className="article-container">
-            <AptDisplay />
+                <AptDisplay />
             </div>
 
         </>

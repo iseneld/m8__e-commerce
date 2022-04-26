@@ -2,6 +2,8 @@
     --lilac-background: rgba(178, 187, 255, 1);
     --dark-lilac: #979fdc;
     --dark-blue: #242A5B;
+    --dark-blue-extra-faded: rgba(36, 42, 91, 0.1);
+    --dark-blue-innerfade: rgba(36, 42, 91, 0.19);
     --dark-blue-faded: rgba(36, 42, 91, 0.6);
     --dark-lilac-faded: #828ac5;
   
@@ -13,9 +15,8 @@
   
  img {
    width: auto;
-   max-width: 95%;
+   max-width: 90%;
    max-height: 75%;
-   margin: 2% 0 2% 0;
  }
   
  .sell-button {
@@ -45,7 +46,7 @@
    flex-direction: column;
 
    &--your-property {
-      height:unset;
+      height: unset;
    }
 
  }
@@ -59,13 +60,28 @@
  }
   
  .about-apt {
+    border-radius: 8px;
+    width: 70%;
+    height: 80%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-  
-    gap: 40%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue-innerfade);
  }
-  
+ .about-apt-title {
+   display: flex;
+   width: 90%;
+   justify-content: space-evenly;
+   flex-direction: row;
+ }
+ .about-apt-desc {
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   flex-direction: row;
+ }
+ 
  ul {
     list-style: none;
  }
@@ -79,6 +95,17 @@
    flex-direction: column;
 }
 
+.AptInfo-frame {
+   background-color: var(--dark-blue-extra-faded);
+   width: 90%;
+   height: 8rem;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.224);
+}
+
 button {
    background: var(--dark-blue);
    border: none;
@@ -90,3 +117,31 @@ button {
    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
  }
+
+ .apt-price-tag {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+
+    img {
+       max-width: 40%;
+       max-height: auto;
+    }
+ }
+
+//  .HC-icon {
+//     max-width: 50%;
+//     max-height: auto;
+//  }
+
+ @media only screen and (max-width: 1000px) {
+    .AptBox-frame img {
+      max-width: 90%;
+    }
+ }
+
+@media screen and (min-width: 850px) {
+   .apt-display--your-property {
+      height: 90%;
+   }
+}

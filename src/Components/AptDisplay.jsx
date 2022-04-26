@@ -6,8 +6,6 @@ function AptDisplay() {
             <div className="apt-display apt-display--your-property">
                 <AptBox />
                 <AptInfo />
-                <button className="sell-btn">SELL</button>
-
             </div>
     )
 }
