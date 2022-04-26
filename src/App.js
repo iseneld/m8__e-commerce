@@ -14,24 +14,35 @@ import {createContext, useEffect, useState} from "react";
 
 export const UserContext = createContext(); 
 
-
-
 function App() {
+  const [apartments, setApartments] = useState([]);
+
+  useEffect(() => {
+    async function fetchApts() {
+      const response = await fetch("http://localhost:5000/apartments");
+      const result = await response.json();
+      setApartments(result);
+    }
+
+    fetchApts();
+  }, []);
+
+  console.log(apartments);
 
   const [token, setToken] = useState("");
-  useEffect(()=>{
+  useEffect(() => {
     console.log("Token: ", token);
-  }, [token])
- 
+  }, [token]);
+
   return (
-    <UserContext.Provider value={{token, setToken}}>
+    <UserContext.Provider value={{ token, setToken }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pay1" element={<Payment1 />} />
         <Route path="/pay2" element={<Payment2 />} />
         <Route path="/pay3" element={<Payment3 />} />
-        <Route path="/apartment" element={<Apartment/>} />
+        <Route path="/apartment" element={<Apartment />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
