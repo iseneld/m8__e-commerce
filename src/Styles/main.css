@@ -203,16 +203,6 @@
   fill: var(--lilac-background);
 }
 
-h1 {
-  text-align: center;
-  font-family: springwoodFont;
-  color: var(--color-white);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  text-shadow: 0 0 2px var(--dark-lilac-faded);
-  letter-spacing: 1.5px;
-}
-
 [role='tooltip'].popup-content {
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
@@ -227,6 +217,16 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+[role='tooltip'].popup-content h1 {
+  text-align: center;
+  font-family: springwoodFont;
+  color: var(--color-white);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  text-shadow: 0 0 2px var(--dark-lilac-faded);
+  letter-spacing: 1.5px;
 }
 
 [role='tooltip'].popup-content .pop-up-apt-display {
