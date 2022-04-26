@@ -761,6 +761,22 @@ button {
   font-weight: bold;
 }
 
+.poster-frame {
+  width: 5rem;
+  height: 5rem;
+  background-color: #242A5B;
+  color: #fff;
+  background-image: url("./css-content/texture-brick.jpeg");
+}
+
+.poster-grid {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 :root {
   --color-white: #FAFBFB;
   --color-2a: #ABD4C4;
