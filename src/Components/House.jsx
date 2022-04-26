@@ -1,17 +1,19 @@
 import Floor from './Floor'
 
-const House = () => (
+const House = ({apartments}) => {
+  const apartmentsProp = apartments;
+  return( 
   <section className="house">
-    <Floor />
-    <Floor />
-    <Floor />
-    <Floor />
-    <Floor />
-    <Floor />
+    {/* <Floor apartments={apartmentsProp}/>
+    <Floor apartments={apartmentsProp}/>
+    <Floor apartments={apartmentsProp}/>
+    <Floor apartments={apartmentsProp}/>
+    <Floor apartments={apartmentsProp}/> */}
+    <Floor apartments={apartmentsProp.splice(0, 4)}/>
     <section className="entrance">
       <article className="door"></article>
     </section>
-  </section>
-);
+  </section> )
+};
 
 export default House;
