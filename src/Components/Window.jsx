@@ -15,16 +15,16 @@ const Window = ({apartment}) => {
         <Popup trigger={<button className="window-btn"> </button>}
           position="right center" contentStyle={{ width: "300px" }}>
           <div>
-            <h1>Apartment 109</h1>
+            <h1>{`Apartment ${apartmentProp && apartmentProp.ownerName}`}</h1>
             <section className="pop-up-apt-display">
               <div className="pop-up-apt-image">
                 { apartmentProp && <img src={`${API_BASE_URL}${apartmentProp.aptImg}`} alt="hej" /> }
               </div>
               <section className="abt-apartment">
-                <h3>For sale!</h3>
+                <h3>{apartmentProp && apartmentProp.ownerName}</h3>
                 <ul>
-                  <li><p>Prize:</p></li>
-                  <li><p>Your coins:</p></li>
+                  <li><p>{`Prize: $${apartmentProp && apartmentProp.price}`} </p></li>
+                  <li><p>Your coins: </p></li>
                 </ul>
               </section>
               <section className="apt-buttons">
