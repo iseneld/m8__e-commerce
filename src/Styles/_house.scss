@@ -58,4 +58,98 @@
   background-size: cover;
   height: var(--window-size);
   width: calc(var(--window-size) / 1.5);
+
+ }
+  
+ ////////////// POP-UP /////////////
+  
+ .popup-content {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+ }
+
+ .popup-arrow {
+  color: rgb(255, 255, 255);
+
+  path {
+    fill: var(--lilac-background);
+  }
+ }
+
+
+  
+ [role='tooltip'].popup-content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  background-color: var(--lilac-background);
+  padding: 1.5%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    font-family: springwoodFont;
+    color: var(--color-white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-shadow: 0 0 2px var(--dark-lilac-faded);
+    letter-spacing: 1.5px;
+  }
+  
+  .pop-up-apt-display {
+    background: var(--dark-lilac-faded);
+    padding: 5%;
+    border-radius: 8px;
+    margin-top: 5%;
+
+    h3, ul, .pop-up-apt-image {
+      margin-bottom: 5%;
+    }
+  
+    .pop-up-apt-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+        border: 8px solid var(--dark-blue-faded);
+        border-radius: 8px;
+      }
+    }
+
+    .apt-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      #pop-up-buy-btn {
+        background-color: var(--buy-btn-green);
+      }
+      #pop-up-buy-btn:hover {
+        background-color: var(--buy-btn-green-hover);
+        transition: 0.5;
+      }
+
+      button:hover {
+        background-color: var(--dark-blue-hover);
+        transition: 0.5;
+      
+      }
+    }
+  }
+ }
+  
+ .popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+ }
+ [data-popup='tooltip'].popup-overlay {
+  background: transparent;
+ }
+ 
+
 }
+
