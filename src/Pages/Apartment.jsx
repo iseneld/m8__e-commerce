@@ -1,7 +1,5 @@
 import AptDisplay from "../Components/AptDisplay";
 import "../Styles/css-content/lgh1.jpeg";
-
-import "../Styles/apartment.css";
 import Inventory from "../Components/Inventory";
 import {useState, createContext} from "react";
 
