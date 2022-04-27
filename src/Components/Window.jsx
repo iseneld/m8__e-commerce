@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Window = ({apartment}) => {
   const apartmentProp = apartment;
   console.log(`Apartment: `, apartmentProp);
+
   
   return (
     <>
@@ -23,12 +24,12 @@ const Window = ({apartment}) => {
               {apartmentProp && apartmentProp.ownerName === "For sale!" && (<h3>For sale!</h3>)}
             {apartmentProp && apartmentProp.ownerName != "For sale!" && (<h3>Owned by {apartmentProp.ownerName}</h3>)}
                 <ul>
-                  <li><p>{`Prize: $${apartmentProp && apartmentProp.price}`} </p></li>
+                  <li><p>{`Price: $${apartmentProp && apartmentProp.price}`} </p></li>
                   <li><p>Your coins: </p></li>
                 </ul>
               </section>
               <section className="apt-buttons">
-                <Link to="/apartment"><button>VIEW</button></Link>
+                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button>VIEW</button></Link>
                 <button id="pop-up-buy-btn">BUY</button>
               </section>
             </section>

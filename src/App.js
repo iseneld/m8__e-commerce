@@ -41,7 +41,7 @@ function App() {
         <Route path="/pay1" element={<Payment1 />} />
         <Route path="/pay2" element={<Payment2 />} />
         <Route path="/pay3" element={<Payment3 />} />
-        <Route path="/apartment" element={<Apartment />} />
+        <Route path="/apartment/:aptNumber" element={<Apartment />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
