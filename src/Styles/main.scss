@@ -18,7 +18,10 @@
   --color-sky-b: #95AFDE;
   --lilac-background: #B3BBFF;
   --faded-lilac: rgba(36, 42, 91, 0.19);
+  --buy-btn-green: rgba(63, 108, 89, 1);
+  --buy-btn-green-hover: rgb(83, 119, 104);
   --dark-blue: #242A5B;
+  --dark-blue-hover: #363d70;
   --nav-blue: #52629a;
   --dark-blue-faded: rgba(36, 42, 91, 0.6);
   --dark-lilac-faded: #828ac5;
@@ -52,15 +55,11 @@ body {
 }
 
 #root {
-  flex-grow: 1;
+  // flex-grow: 1;
   width: 100%;
 
   display: flex;
   flex-direction: column;
-
-  section {
-    flex-grow: 1;
-  }
 }
 
 header {
