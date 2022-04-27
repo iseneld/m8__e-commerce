@@ -91,7 +91,15 @@
 
             border-radius: 8px;
             border:1.5px solid black;
+
+            
         }
+
+        img.active {
+            border:5px solid gold;
+        }
+
+
     }
 
     h1 {
@@ -100,3 +108,4 @@
     }
 
 }
+
