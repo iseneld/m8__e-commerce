@@ -20,21 +20,18 @@ function AptDisplay() {
           return apt.aptNumber == aptNumber;
           })
 
-      setApartment(aptItem);
+      setApartment(aptItem[0]);
     }
 
     fetchApt();
   }, []);
   apartment && console.log('apartment is', apartment)
 
-//   function filterByFloor(array, x) {
-//     return array.filter((apt) => {return apt.aptNumber > x && apt.aptNumber < x + 100})
-//   }
 
     return (
             <div className="apt-display apt-display--your-property">
-                <AptBox />
-                <AptInfo />
+                <AptBox apartment={apartment} />
+                <AptInfo apartment={apartment} />
             </div>
     )
 }
