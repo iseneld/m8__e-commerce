@@ -1,17 +1,20 @@
 import coin2png from '../Styles/css-content/coin2.png';
-function AptInfo() {
+import { API_BASE_URL } from "../config";
+
+function AptInfo({apartment}) {
+  const aptInfoApartment = apartment;
   return (
     <div className="AptInfo-frame">
       <section className="about-apt">
                     <div className="about-apt-title">
-                      <h2>Apartment 102</h2>
+                    { aptInfoApartment && <h2>{`Apartment ${aptInfoApartment.aptNumber}`}</h2>}
                       <div className='apt-price-tag'>
                         <img src={coin2png} alt="HCoin" className='HC-icon' />
-                        <p>309 HC</p>
+                        <p>{`${aptInfoApartment && aptInfoApartment.price} HC`} </p>
                       </div>
                     </div>
                     <div className="about-apt-desc">
-                      <p>Low tier apartment <br />Alleyway view</p>
+                    <p>{`${aptInfoApartment && aptInfoApartment.tier} tier apartment`}<br />{`View: ${aptInfoApartment && aptInfoApartment.view}`}</p>
                       <button className="sell-btn">Sell</button>
                     </div>
         </section>

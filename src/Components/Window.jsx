@@ -3,10 +3,12 @@ import Popup from 'reactjs-popup';
 import { API_BASE_URL } from "../config";
 import 'reactjs-popup/dist/index.css';
 import { Link } from 'react-router-dom';
+import coin2png from '../Styles/css-content/coin2.png';
 
 const Window = ({apartment}) => {
   const apartmentProp = apartment;
   console.log(`Apartment: `, apartmentProp);
+
   
   return (
     <>
@@ -23,12 +25,12 @@ const Window = ({apartment}) => {
               {apartmentProp && apartmentProp.ownerName === "For sale!" && (<h3>For sale!</h3>)}
             {apartmentProp && apartmentProp.ownerName != "For sale!" && (<h3>Owned by {apartmentProp.ownerName}</h3>)}
                 <ul>
-                  <li><p>{`Prize: $${apartmentProp && apartmentProp.price}`} </p></li>
+                  <li><div className='apt-price-tag'><img src={coin2png} alt="HCoin" className='HC-icon' /><p>{`${apartmentProp && apartmentProp.price} HC`} </p></div></li>
                   <li><p>Your coins: </p></li>
                 </ul>
               </section>
               <section className="apt-buttons">
-                <Link to="/apartment"><button>VIEW</button></Link>
+                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button>VIEW</button></Link>
                 <button id="pop-up-buy-btn">BUY</button>
               </section>
             </section>
