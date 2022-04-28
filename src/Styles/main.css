@@ -186,8 +186,8 @@
 }
 
 [role='tooltip'].popup-content .pop-up-apt-display .pop-up-apt-image img {
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border: 8px solid var(--dark-blue-faded);
   border-radius: 8px;
 }
