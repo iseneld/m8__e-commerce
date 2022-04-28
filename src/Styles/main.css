@@ -753,12 +753,21 @@ button {
 }
 
 .apt-price-tag img {
-  max-width: 30%;
-  max-height: 40%;
+  max-width: 40%;
+  max-height: 30%;
 }
 
 .apt-price-tag p {
   font-weight: bold;
+}
+
+.apt-price-tag--for-popup img {
+  max-width: 10%;
+  max-height: 20%;
+}
+
+.apt-price-tag--for-popup p {
+  font-size: small;
 }
 
 .poster-frame {

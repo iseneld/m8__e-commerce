@@ -25,7 +25,7 @@ const Window = ({apartment}) => {
               {apartmentProp && apartmentProp.ownerName === "For sale!" && (<h3>For sale!</h3>)}
             {apartmentProp && apartmentProp.ownerName != "For sale!" && (<h3>Owned by {apartmentProp.ownerName}</h3>)}
                 <ul>
-                  <li><div className='apt-price-tag'><img src={coin2png} alt="HCoin" className='HC-icon' /><p>{`${apartmentProp && apartmentProp.price} HC`} </p></div></li>
+                  <li><div className='apt-price-tag apt-price-tag--for-popup'><img src={coin2png} alt="HCoin" className='HC-icon' /><p>{`${apartmentProp && apartmentProp.price} HC`} </p></div></li>
                   <li><p>Your coins: </p></li>
                 </ul>
               </section>
