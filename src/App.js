@@ -11,6 +11,8 @@ import UserPage from "./Pages/UserPage";
 import "reactjs-popup/dist/index.css";
 import RegisterPage from "./Pages/RegisterPage";
 import LoginPage from "./Pages/LoginPage";
+import AboutPage from "./Pages/AboutPage";
+import MarketplacePage from "./Pages/MarketplacePage";
 import { createContext, useEffect, useState } from "react";
 
 export const UserContext = createContext();
@@ -46,6 +48,8 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/marketplace" element={<MarketplacePage />} />
       </Routes>
       <Footer />
     </UserContext.Provider>

@@ -140,6 +140,8 @@ button {
     flex-direction: row;
     gap: 3%;
     align-items: center;
+    flex-wrap: nowrap;
+    min-width: 30%;
     
 
     img {
@@ -149,6 +151,7 @@ button {
 
     p {
        font-weight:bold;
+       font-size: 20px;
     }
 
     &--for-popup {

@@ -750,6 +750,8 @@ button {
   flex-direction: row;
   gap: 3%;
   align-items: center;
+  flex-wrap: nowrap;
+  min-width: 30%;
 }
 
 .apt-price-tag img {
@@ -759,6 +761,7 @@ button {
 
 .apt-price-tag p {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .apt-price-tag--for-popup img {

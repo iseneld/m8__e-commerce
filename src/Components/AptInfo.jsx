@@ -14,8 +14,8 @@ function AptInfo({apartment}) {
                       </div>
                     </div>
                     <div className="about-apt-desc">
-                    <p>{`${aptInfoApartment && aptInfoApartment.tier} tier apartment`}<br />{`View: ${aptInfoApartment && aptInfoApartment.view}`}</p>
-                      <button className="sell-btn">Sell</button>
+                    <p>{`${aptInfoApartment && aptInfoApartment.tier} tier apartment`}<br />{`${aptInfoApartment && aptInfoApartment.view}`}</p>
+                      <button className="sell-btn">Buy</button>
                     </div>
         </section>
     </div>

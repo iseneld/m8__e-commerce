@@ -16,7 +16,7 @@ const PropertyItem = () => {
                     </div>
                     <section className="view-sell-btns">
                     <button className="btn">View</button>
-                    <button className="btn btn--sellbtn">Sell</button>
+                    <button className="btn btn--sellbtn">Buy</button>
                     </section>
                 </section>
             </div>
