@@ -220,6 +220,10 @@
   background: transparent;
 }
 
+.clouds {
+  position: absolute;
+}
+
 :root {
   --lilac-background: rgba(178, 187, 255, 1);
   --dark-lilac: #979fdc;
