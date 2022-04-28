@@ -6,6 +6,7 @@ import Apartment from "./Pages/Apartment";
 import Home from "./Pages/Home";
 import Payment1 from "./Pages/Payment1";
 import Payment2 from "./Pages/Payment2";
+import AboutUs from "./Pages/AboutUs";
 import Payment3 from "./Pages/Payment3";
 import UserPage from "./Pages/UserPage";
 import "reactjs-popup/dist/index.css";
@@ -41,6 +42,7 @@ function App() {
         <Route path="/pay1" element={<Payment1 />} />
         <Route path="/pay2" element={<Payment2 />} />
         <Route path="/pay3" element={<Payment3 />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/apartment" element={<Apartment />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
