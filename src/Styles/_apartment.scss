@@ -166,11 +166,13 @@ button {
  }
 
  .poster-frame {
-    width: 5rem;
-    height: 5rem;
-    background-color: #242A5B;
+    width: 8vw;
+    height: calc(80px + 5vh);
+    background-color: var(--dark-blue-faded);
     color: #fff;
-    background-image: url("./css-content/texture-brick.jpeg");
+    //background-image: url("./css-content/texture-brick.jpeg");
+    cursor: pointer;
+    border: 5px dashed whitesmoke;
  }
 
  .poster-grid {
