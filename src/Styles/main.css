@@ -1113,12 +1113,20 @@ button {
 }
 
 .poster-frame {
-  width: 8vw;
-  height: calc(80px + 5vh);
   background-color: var(--dark-blue-faded);
+  height: auto;
+  width: 10vh;
   color: #fff;
   cursor: pointer;
   border: 5px dashed whitesmoke;
+}
+
+.poster-frame img {
+  width: 100%;
+}
+
+.poster-frame.active {
+  border: 5px solid green;
 }
 
 .poster-grid {

@@ -1,24 +1,34 @@
+import {useState, useContext} from "react";
+import { PosterContext } from "../Pages/Apartment";
 
+function Poster({ posterId, setId, selectedPosterContainer }) {
 
-function Poster({ changeContainer, sentPoster, posterId }) {
+  const { selectedPoster, setSelectedPoster, inAndOutState, setInAndOutState } = useContext(PosterContext);
 
-  const poster = sentPoster;
-  let localPoster = localStorage.getItem("poster" + posterId);
-  console.log(localPoster)
-
-  if (localPoster === null) localPoster = "";
-
-  if (poster !== "") {
-    localStorage.setItem("poster" + posterId, poster)
+  if(selectedPosterContainer === posterId && selectedPoster) {
+    localStorage.setItem("poster" + posterId, selectedPoster);
   }
 
-  //
+  let localPoster = "";
+  if (localStorage.getItem("poster" + posterId)) {
+    localPoster = require(`../Styles/css-content/posters/${localStorage.getItem("poster" + posterId)}`);
+  }
+
+  console.log(localPoster)
+
+  const onClickFunction = () => {
+    setId();
+    setSelectedPoster("");
+    if(!inAndOutState) setInAndOutState(true);
+  }
+
+  //require(`../Styles/css-content/posters/${localStorage.getItem("poster" + posterId)}`)
   //poster === "" ? null : localStorage;
 
   return (
-    <div className="poster-frame" onClick={changeContainer}>
-      <img src={poster === "" ? require(`../Styles/css-content/posters/${localStorage.getItem("poster" + posterId)}`) :
-        require(`../Styles/css-content/posters/${poster}`)} /></div>
+    <div className={`poster-frame ${selectedPosterContainer === posterId ? "active" : ""}`} onClick={onClickFunction}>
+      <img src={localPoster} alt="" />
+    </div>
   )
 }
 

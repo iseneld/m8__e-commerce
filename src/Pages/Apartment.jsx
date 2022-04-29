@@ -10,11 +10,12 @@ export const PosterContext = createContext();
 const Apartment = () => {
 
     const [selectedPoster, setSelectedPoster] = useState("")
+    const [inAndOutState, setInAndOutState] = useState(false);
 
     console.log(selectedPoster)
 
     return (
-        <PosterContext.Provider value={{selectedPoster, setSelectedPoster}}>
+        <PosterContext.Provider value={{selectedPoster, setSelectedPoster, inAndOutState, setInAndOutState}}>
             <div className="article-container">
             <Inventory />
             <AptDisplay />
