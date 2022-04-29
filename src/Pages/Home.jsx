@@ -18,11 +18,19 @@ const Home = ({apartments}) => {
   <>
     {/* <div className="background"> */}
       <main>
-        <div className='wrapper'>
-          <img src='./images/clouds.png' className='clouds' 
+        <div className='parallax-wrapper'>
+        <img src='./images/buttAngel.png' className='clouds4' 
+          style={{ transform: `translateX(${offsetY * -5.2}px)` }} />
+          <img src='./images/ufo.png' className='clouds' 
+          style={{ transform: `translateX(${offsetY * -3.2}px)` }} />
+          <img src='./images/ironman.png' className='clouds1' 
+          style={{ transform: `translateX(${offsetY * 2.6}px)` }} />
+          <img src='./images/clouds.png' className='clouds2' 
+          style={{ transform: `translateX(${offsetY * -2.5}px)` }} />
+          <img src='./images/clouds.png' className='clouds3' 
           style={{ transform: `translateX(${offsetY * 0.5}px)` }} />
-          <House apartments={apartmentsProp}/>
         </div>
+        <House apartments={apartmentsProp}/>
       </main>
     {/* </div> */}
   </>);
