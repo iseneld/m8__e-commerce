@@ -18,7 +18,7 @@ const Apartment = () => {
     return (
         <PosterContext.Provider value={{selectedPoster, setSelectedPoster, inAndOutState, setInAndOutState, editable, setEditable}}>
             <div className="article-container">
-            <Inventory />
+            {editable ? <Inventory /> : null}
             <AptDisplay />
             </div>
         </PosterContext.Provider>

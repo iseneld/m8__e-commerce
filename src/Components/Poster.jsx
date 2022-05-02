@@ -14,7 +14,7 @@ function Poster({ posterId, setId, selectedPosterContainer }) {
     localPoster = require(`../Styles/css-content/posters/${localStorage.getItem("poster" + posterId)}`);
   }
 
-  //console.log(localPoster)
+  console.log(localPoster)
 
   const changePoster = () => {
     setId();
@@ -27,7 +27,7 @@ function Poster({ posterId, setId, selectedPosterContainer }) {
 
   return (
     <div className={`poster-frame ${selectedPosterContainer === posterId && editable ? "active" : ""} ${editable ? "editable" : ""}`} onClick={() => {if(editable) changePoster();}}>
-      <img src={localPoster} alt="" />
+      <img src={localPoster ? localPoster : ""} alt="" />
     </div>
   )
 }
