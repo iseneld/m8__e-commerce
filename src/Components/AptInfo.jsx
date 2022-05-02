@@ -15,7 +15,7 @@ function AptInfo({apartment}) {
                     </div>
                     <div className="about-apt-desc">
                     <p>{`${aptInfoApartment && aptInfoApartment.tier} tier apartment`}<br />{`${aptInfoApartment && aptInfoApartment.view}`}</p>
-                      <button className="sell-btn">Buy</button>
+                      <button className="sell-btn">{aptInfoApartment && aptInfoApartment.ownerName != "For sale!" ? "Make Offer" :"Buy now"}</button>
                     </div>
         </section>
     </div>
