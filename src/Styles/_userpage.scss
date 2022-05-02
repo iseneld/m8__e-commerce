@@ -287,3 +287,53 @@
   flex-direction: row !important;
 }
 
+
+
+//ABOUT PAGE
+
+.about-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0% 5%;
+  overflow: scroll;
+  
+  .about-title-desc {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    gap: 3%;
+    text-align: center;
+
+    h2 {
+      color: white;
+      font-style: italic;
+    }
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 2%;
+
+      .about-1 {
+        flex-direction: column;
+        flex-grow: 2;
+        width: 30%;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+  }
+}

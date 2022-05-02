@@ -30,8 +30,9 @@ const Window = ({apartment}) => {
                 </ul>
               </section>
               <section className="apt-buttons">
-                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button>VIEW</button></Link>
-                <button id="pop-up-buy-btn">BUY</button>
+                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button>View</button></Link>
+                <button id="pop-up-buy-btn">{apartmentProp && apartmentProp.ownerName != "For sale!" ? "Make Offer" :"Buy now"}</button>
+                
               </section>
             </section>
           </div>
