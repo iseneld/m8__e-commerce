@@ -90,8 +90,10 @@
   z-index: 30;
   margin-left: 20%;
   /* margin-top: 20%; */
-  background: url(./css-content/texture-brick.jpeg) repeat;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  background: url(./css-content/brickwall-test2.png) repeat;
+  background-size: 33%;
+  -webkit-box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
   z-index: 190;
 }
 
