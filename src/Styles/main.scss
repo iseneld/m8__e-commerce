@@ -59,7 +59,8 @@ body {
   background-image: url("/public/images/thehillsbakgrund6.png");
   background-size: contain;
   background-position: center;
-
+  background-repeat: no-repeat;
+  
 }
 
 #root {
@@ -120,7 +121,6 @@ header {
 main {
   padding-top: 10rem;
   background: var(----bg-gradient);
-
 }
 footer {
   width: 100%;
