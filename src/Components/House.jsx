@@ -7,7 +7,7 @@ function filterByFloor(array, x) {
 
 const House = ({apartments}) => {
   const apartmentsProp = apartments.sort((a, b)=> a.aptNumber - b.aptNumber);
-  apartmentsProp && console.log("In the array:", apartmentsProp)
+  // apartmentsProp && console.log("In the array:", apartmentsProp)
 
   return( 
   <section className="house">

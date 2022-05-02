@@ -7,7 +7,7 @@ import coin2png from '../Styles/css-content/coin2.png';
 
 const Window = ({apartment}) => {
   const apartmentProp = apartment;
-  console.log(`Apartment: `, apartmentProp);
+  // console.log(`Apartment: `, apartmentProp);
 
   
   return (
