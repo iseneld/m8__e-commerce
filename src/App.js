@@ -1,19 +1,25 @@
 import { Routes, Route } from "react-router-dom";
 import { API_BASE_URL } from "./config";
+import { createContext, useEffect, useState } from "react";
+
+// STYLES
+import "reactjs-popup/dist/index.css";
+
+// COMPONENTS
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+
+// PAGES
+import AboutPage from "./Pages/AboutPage";
 import Apartment from "./Pages/Apartment";
 import Home from "./Pages/Home";
+import LoginPage from "./Pages/LoginPage";
+import MarketplacePage from "./Pages/MarketplacePage";
 import Payment1 from "./Pages/Payment1";
 import Payment2 from "./Pages/Payment2";
 import Payment3 from "./Pages/Payment3";
-import UserPage from "./Pages/UserPage";
-import "reactjs-popup/dist/index.css";
 import RegisterPage from "./Pages/RegisterPage";
-import LoginPage from "./Pages/LoginPage";
-import AboutPage from "./Pages/AboutPage";
-import MarketplacePage from "./Pages/MarketplacePage";
-import { createContext, useEffect, useState } from "react";
+import UserPage from "./Pages/UserPage";
 
 export const UserContext = createContext();
 

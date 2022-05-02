@@ -19,16 +19,16 @@ const Home = ({apartments}) => {
     {/* <div className="background"> */}
       <main>
         <div className='parallax-wrapper'>
-        <img src='./images/buttAngel.png' className='clouds4' 
-          style={{ transform: `translateX(${offsetY * -5.2}px)` }} />
-          <img src='./images/ufo.png' className='clouds' 
+          <img src='./images/ufo.png' className='ufo' 
           style={{ transform: `translateX(${offsetY * -3.2}px)` }} />
-          <img src='./images/ironman.png' className='clouds1' 
-          style={{ transform: `translateX(${offsetY * 2.6}px)` }} />
+          <img src='./images/ironman.png' className='ironman' 
+          style={{ transform: `translateX(${offsetY * 2}px)` }} />
           <img src='./images/clouds.png' className='clouds2' 
-          style={{ transform: `translateX(${offsetY * -2.5}px)` }} />
+          style={{ transform: `translateX(${offsetY * -0.05}px)` }} />
           <img src='./images/clouds.png' className='clouds3' 
-          style={{ transform: `translateX(${offsetY * 0.5}px)` }} />
+          style={{ transform: `translateX(${offsetY * 0.05}px)` }} />
+          <img src='./images/clouds.png' className='clouds4' 
+          style={{ transform: `translateX(${offsetY * 0.07}px)` }} />
         </div>
         <House apartments={apartmentsProp}/>
       </main>
