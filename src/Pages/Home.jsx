@@ -20,15 +20,15 @@ const Home = ({apartments}) => {
       <main>
         <div className='parallax-wrapper'>
           <img src='./images/ufo.png' className='ufo' 
-          style={{ transform: `translateX(${offsetY * -3.2}px)` }} />
+          style={{ transform: `translateX(${offsetY * -3.2}px)` }} alt="UFO flying in the air"/>
           <img src='./images/ironman.png' className='ironman' 
-          style={{ transform: `translateX(${offsetY * 2}px)` }} />
+          style={{ transform: `translateX(${offsetY * 2}px)` }} alt="Iron Man flying in the air"/>
           <img src='./images/clouds.png' className='clouds2' 
-          style={{ transform: `translateX(${offsetY * -0.05}px)` }} />
+          style={{ transform: `translateX(${offsetY * -0.05}px)` }} alt="Cloud flying in the air" />
           <img src='./images/clouds.png' className='clouds3' 
-          style={{ transform: `translateX(${offsetY * 0.05}px)` }} />
+          style={{ transform: `translateX(${offsetY * 0.05}px)` }} alt="Cloud flying in the air"  />
           <img src='./images/clouds.png' className='clouds4' 
-          style={{ transform: `translateX(${offsetY * 0.07}px)` }} />
+          style={{ transform: `translateX(${offsetY * 0.07}px)` }} alt="Cloud flying in the air"  />
         </div>
         <House apartments={apartmentsProp}/>
       </main>
