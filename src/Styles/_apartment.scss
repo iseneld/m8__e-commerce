@@ -171,12 +171,15 @@ button {
     width:10vh;
     color: #fff;
     //background-image: url("./css-content/texture-brick.jpeg");
-    cursor: pointer;
-    border: 5px dashed whitesmoke;
 
     img {
        width:100%;
     }
+ }
+
+ .editable {
+   cursor: pointer;
+   border: 5px dashed whitesmoke;
  }
 
 

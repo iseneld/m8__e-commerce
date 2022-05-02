@@ -1117,12 +1117,15 @@ button {
   height: auto;
   width: 10vh;
   color: #fff;
-  cursor: pointer;
-  border: 5px dashed whitesmoke;
 }
 
 .poster-frame img {
   width: 100%;
+}
+
+.editable {
+  cursor: pointer;
+  border: 5px dashed whitesmoke;
 }
 
 .poster-frame.active {

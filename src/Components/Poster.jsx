@@ -3,7 +3,7 @@ import { PosterContext } from "../Pages/Apartment";
 
 function Poster({ posterId, setId, selectedPosterContainer }) {
 
-  const { selectedPoster, setSelectedPoster, inAndOutState, setInAndOutState } = useContext(PosterContext);
+  const { selectedPoster, setSelectedPoster, inAndOutState, setInAndOutState, editable } = useContext(PosterContext);
 
   if(selectedPosterContainer === posterId && selectedPoster) {
     localStorage.setItem("poster" + posterId, selectedPoster);
@@ -14,9 +14,9 @@ function Poster({ posterId, setId, selectedPosterContainer }) {
     localPoster = require(`../Styles/css-content/posters/${localStorage.getItem("poster" + posterId)}`);
   }
 
-  console.log(localPoster)
+  //console.log(localPoster)
 
-  const onClickFunction = () => {
+  const changePoster = () => {
     setId();
     setSelectedPoster("");
     if(!inAndOutState) setInAndOutState(true);
@@ -26,7 +26,7 @@ function Poster({ posterId, setId, selectedPosterContainer }) {
   //poster === "" ? null : localStorage;
 
   return (
-    <div className={`poster-frame ${selectedPosterContainer === posterId ? "active" : ""}`} onClick={onClickFunction}>
+    <div className={`poster-frame ${selectedPosterContainer === posterId && editable ? "active" : ""} ${editable ? "editable" : ""}`} onClick={() => {if(editable) changePoster();}}>
       <img src={localPoster} alt="" />
     </div>
   )
