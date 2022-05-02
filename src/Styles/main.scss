@@ -3,6 +3,7 @@
 @import '_register.scss';
 @import '_userpage.scss';
 @import '_apartment.scss';
+@import '_inventory.scss';
 
 
 :root {
@@ -42,27 +43,32 @@
   padding: 0;
   box-sizing: border-box;
   font-family: nunitoFont;
+
+  button {
+    cursor: pointer;
+  }
+
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
   display: flex;
   overflow-x: hidden;
-  background: var(--bg-gradient);
+  // background: var(--bg-gradient);
+  background-image: url("/public/images/background.png");
+  background-size: contain;
+  background-position: center;
+
 }
 
 #root {
-  flex-grow: 1;
+  // flex-grow: 1;
   width: 100%;
-
+  height: 100%;
   display: flex;
   flex-direction: column;
-
-  section {
-    flex-grow: 1;
-  }
+  
 }
 
 header {
@@ -74,7 +80,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  z-index: 10;
+  z-index: 15;
 
   div {
     border-radius: 0px 0px 0px 8px;
@@ -114,6 +120,7 @@ header {
 main {
   padding-top: 10rem;
   background: var(----bg-gradient);
+
 }
 footer {
   width: 100%;

@@ -3,18 +3,21 @@
   --window-size: 15vw;
 }
 .house {
+  position: relative;
   padding: 1rem 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 60%;
+  z-index: 30;
 
   margin-left: 20%;
   /* margin-top: 20%; */
 
-  background: url(./css-content/texture-brick.jpeg) repeat;
+  background: url(./css-content/brickwall-test2.png) repeat;
+  background-size: 33%;
   box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  z-index: 190;
 }
 
 .background {
@@ -114,8 +117,8 @@
       overflow: hidden;
 
       img {
-        min-width: 100%;
-        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
         border: 8px solid var(--dark-blue-faded);
         border-radius: 8px;
       }
@@ -152,4 +155,48 @@
  
 
 
+.parallax-wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute; 
+  top: 200px;
+  perspective: 10px;
+  z-index: 10;
+
+  .ufo {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 5%;
+    height: auto;
+  }
+  .ironman {
+    position: absolute;
+    top: 730px;
+    width: 10%;
+    height: auto;
+    left: 0;
+  }
+  .clouds2 {
+    position: absolute;
+    top: 1260px;
+    right: 0;
+    width: 15%;
+    height: auto;
+  }
+  .clouds3 {
+    position: absolute;
+    top: 1250px;
+    width: 20%;
+    height: auto;
+    left: 0;
+  }
+  .clouds4 {
+    position: absolute;
+    top: 1070px;
+    width: 15%;
+    height: auto;
+    left: 0;
+  }
+}
 

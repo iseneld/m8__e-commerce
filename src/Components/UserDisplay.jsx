@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
+import { AiOutlineHome } from "react-icons/ai";
+
 import UserProperties from './UserProperties';
-import { AiOutlineHome } from "react-icons/ai"
 
 const UserDisplay = () => {
     return (
-        <div className="profile-container">
+        <div className="article-container">
         <div className='user-container'>
 
             <div className="apt-display">
