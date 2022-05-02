@@ -1,15 +1,22 @@
-import AboutContent from './AboutContent';
 import AboutTitle from './AboutParagraphs/AboutTitle';
 import AboutPar2 from './AboutParagraphs/AboutPar2';
 import AboutPar3 from './AboutParagraphs/AboutPar3';
+import { useState } from 'react';
 
 const AboutPopUp = () => {
+
+    const [popUpHidden, setPopUpHidden] = useState("false");
+
+    const togglePopUp = () => {
+        setPopUpHidden(!popUpHidden)
+    }
+
     return (
-        <div className="faded-background-container">
+        <div className={popUpHidden ? "faded-background-container" : "hide-pop-up"} >
             <div className="pop-up-display">
                 <section className="about-content">
 
-                    <span class="close-button">&times; </span>
+                    <span class="close-button" onClick={togglePopUp}>&times;</span>
 
                     <section className="about-title-desc about-title-desc--popup">
                         <AboutTitle />

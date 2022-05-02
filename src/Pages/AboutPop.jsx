@@ -17,6 +17,13 @@ const AboutPop = () => {
         toggleModal();
       }
     }
+    
+ React.useEffect(() => {
+    window.addEventListener('keydown', (event) => {
+      windowOnClick()
+    });
+  }, []);
+
   
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
