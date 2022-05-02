@@ -156,8 +156,13 @@
 }
 
 .window {
-  background: url(./css-content/window1.png) no-repeat;
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-sky-b)), color-stop(40%, #5B7687), color-stop(3%, #4B6270), to(#33434D));
+  background-image: linear-gradient(var(--color-sky-b), #5B7687 40%, #4B6270 3%, #33434D);
+
+  // background: url(./css-content/window1.png) no-repeat;
   background-position: center;
+
   margin: .5vw;
   height: var(--window-size);
   width: var(--window-size);
@@ -965,6 +970,11 @@ input[type=password] {
   overflow: scroll;
 }
 
+.about-content h3 {
+  color: white;
+  margin-top: 5%;
+}
+
 .about-content .about-title-desc {
   width: 60%;
   display: -webkit-box;
@@ -988,6 +998,11 @@ input[type=password] {
 .about-content .about-title-desc h2 {
   color: white;
   font-style: italic;
+}
+
+.about-content .about-title-desc--popup {
+  width: 100%;
+  margin-bottom: 3%;
 }
 
 .about-content .about-section {
@@ -1018,6 +1033,67 @@ input[type=password] {
 
 .about-content .about-section .about-1 p {
   margin-top: 10px;
+}
+
+.faded-background-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*     opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; */
+}
+
+.faded-background-container .pop-up-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: var(--lilac-background);
+  padding: 1rem 1.5rem;
+  width: 60%;
+  height: 80%;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faded-background-container .close-button {
+  position: absolute;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: var(--dark-lilac);
+  right: 3%;
+  top: 3%;
+}
+
+.faded-background-container .close-button:hover {
+  background-color: var(--dark-lilac-faded);
+}
+
+.hide-pop-up {
+  visibility: hidden;
+  /*     transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; */
 }
 
 :root {
