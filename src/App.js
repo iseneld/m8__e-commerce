@@ -17,6 +17,7 @@ import LoginPage from "./Pages/LoginPage";
 import MarketplacePage from "./Pages/MarketplacePage";
 import Payment1 from "./Pages/Payment1";
 import Payment2 from "./Pages/Payment2";
+import AboutUs from "./Pages/AboutUs";
 import Payment3 from "./Pages/Payment3";
 import RegisterPage from "./Pages/RegisterPage";
 import UserPage from "./Pages/UserPage";
@@ -50,11 +51,12 @@ function App() {
         <Route path="/pay1" element={<Payment1 />} />
         <Route path="/pay2" element={<Payment2 />} />
         <Route path="/pay3" element={<Payment3 />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/apartment" element={<Apartment />} />
         <Route path="/apartment/:aptNumber" element={<Apartment />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/about" element={<AboutPage />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
       </Routes>
       <Footer />
