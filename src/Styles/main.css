@@ -301,7 +301,7 @@
   top: 200px;
   -webkit-perspective: 10px;
           perspective: 10px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .parallax-wrapper .clouds {
