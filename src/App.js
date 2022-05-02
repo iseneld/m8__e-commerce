@@ -20,6 +20,7 @@ import AboutUs from "./Pages/AboutUs";
 import Payment3 from "./Pages/Payment3";
 import RegisterPage from "./Pages/RegisterPage";
 import UserPage from "./Pages/UserPage";
+import AboutPop from "./Pages/AboutPop";
 
 export const UserContext = createContext();
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/marketplace" element={<MarketplacePage />} />
+        <Route path="/popup" element={<AboutPop />} />
       </Routes>
       <Footer />
     </UserContext.Provider>
