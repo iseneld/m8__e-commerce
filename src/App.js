@@ -10,7 +10,6 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 
 // PAGES
-import AboutPage from "./Pages/AboutPage";
 import Apartment from "./Pages/Apartment";
 import Home from "./Pages/Home";
 import LoginPage from "./Pages/LoginPage";
