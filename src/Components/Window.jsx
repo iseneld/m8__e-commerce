@@ -7,7 +7,7 @@ import coin2png from '../Styles/css-content/coin2.png';
 
 const Window = ({apartment}) => {
   const apartmentProp = apartment;
-  console.log(`Apartment: `, apartmentProp);
+  // console.log(`Apartment: `, apartmentProp);
 
   
   return (
@@ -30,8 +30,9 @@ const Window = ({apartment}) => {
                 </ul>
               </section>
               <section className="apt-buttons">
-                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button>VIEW</button></Link>
-                <button id="pop-up-buy-btn">BUY</button>
+                <Link to={`/apartment/${apartmentProp && apartmentProp.aptNumber}`}><button className="pop-up-btn" id="view-btn">View</button></Link>
+                <button className="pop-up-btn" id={apartmentProp && apartmentProp.ownerName != "For sale!" ? "pop-up-offer-btn" :"pop-up-buy-btn"}>{apartmentProp && apartmentProp.ownerName != "For sale!" ? "Make Offer" :"Buy now"}</button>
+                
               </section>
             </section>
           </div>

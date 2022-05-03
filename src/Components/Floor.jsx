@@ -5,10 +5,10 @@ const Floor = ({apartments}) => {
 
   return (
     <section className="floor">
-      <Window apartment={apartmentsProp[0]}/>
-      <Window apartment={apartmentsProp[1]}/>
-      <Window apartment={apartmentsProp[2]}/>
-      <Window apartment={apartmentsProp[3]}/>
+    <Window apartment={apartmentsProp[0]}/>
+    <Window apartment={apartmentsProp[1]}/>
+    <Window apartment={apartmentsProp[2]}/>
+    <Window apartment={apartmentsProp[3]}/>
     </section>
   );
 };

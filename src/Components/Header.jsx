@@ -9,18 +9,14 @@ import { RiQuestionMark } from 'react-icons/ri'
 const Header = () => {
   return (
     <header>
-
-
-
       <h1>
         <Link to="/"><img src="./images/logo.png" alt="The Hills logo" className="logo" /></Link>
       </h1>
       <div>
-        {/*         <section>
+        {/* <section>
           <img src="./images/coin.png" alt="Currency icon" className="icon" />
           <p>500</p>
         </section> */}
-
         <nav>
           <Link to="/about">
             <RiQuestionMark size={40} />
@@ -28,17 +24,14 @@ const Header = () => {
           <Link to="/marketplace">
             <BsShopWindow size={40} />
           </Link>
-
           <Link to="/pay1">
             <GiCoins size={40} />
           </Link>
-
           <Link to="/user">
             <AiOutlineUser size={40} />
           </Link>
         </nav>
       </div>
-
     </header>
   )
 }

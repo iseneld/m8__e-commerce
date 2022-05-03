@@ -1,6 +1,4 @@
-
 import { API_BASE_URL } from "../config";
-import Poster from "./Poster";
 import PosterGrid from "./PosterGrid";
 import { PosterContext } from "../Pages/Apartment";
 import { useContext } from "react";
@@ -65,7 +63,6 @@ function AptBox({apartment}) {
 
 
   const aptBoxApartment = apartment;
-  //console.log('aptbox hej', aptBoxApartment.aptImg);
   return (
     <div className="AptBox-frame">
         <h1 className="apt-title">Property for sale</h1>

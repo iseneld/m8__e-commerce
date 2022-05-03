@@ -1,9 +1,14 @@
+
 import { useState, useContext } from "react";
 import PosterInventory from "./PosterInventory";
+
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { PosterContext } from "../Pages/Apartment";
 
+import PosterInventory from "./PosterInventory";
+
 const Inventory = () => {
+
     const {inAndOutState, setInAndOutState} = useContext(PosterContext)
     
     return (
@@ -12,8 +17,9 @@ const Inventory = () => {
            {inAndOutState ?  <IoIosArrowForward size={40}/> : <IoIosArrowBack size={40}/>}
         </div>
                 <PosterInventory />
+
         </section>
     )
-  }
+}
   
   export default Inventory;

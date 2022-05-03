@@ -6,10 +6,9 @@ import AptInfo from "./AptInfo";
 
 function AptDisplay() {
 
-    let { aptNumber } = useParams();
-    //console.log(aptNumber)
+  let { aptNumber } = useParams();
+  const [apartment, setApartment] = useState({});
 
-    const [apartment, setApartment] = useState({});
 
   useEffect(() => {
     async function fetchApt() {
@@ -22,18 +21,16 @@ function AptDisplay() {
 
       setApartment(aptItem[0]);
     }
-
     fetchApt();
   }, []);
-  //apartment && console.log('apartment is', apartment)
 
 
-    return (
-            <div className="apt-display apt-display--your-property">
-                <AptBox apartment={apartment} />
-                <AptInfo apartment={apartment} />
-            </div>
-    )
+  return (
+    <div className="apt-display apt-display--your-property">
+      <AptBox apartment={apartment} />
+      <AptInfo apartment={apartment} />
+    </div>
+  )
 }
 
 export default AptDisplay;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { BiArrowBack } from "react-icons/bi";
 
 function LoginForm() {
