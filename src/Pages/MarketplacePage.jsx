@@ -1,10 +1,13 @@
 function MarketplacePage() {
-    return (
-      <div>
-        <h1>Marketplace</h1>
+  return (
+    <div className="profile-container">
+      <div className='user-container'>
+        <div className="apt-display">
+          <h1 className="user-props-title">Marketplace</h1>
+        </div>
       </div>
-    )
-  }
-  
-  export default MarketplacePage
-  
+    </div>
+  )
+}
+
+export default MarketplacePage
