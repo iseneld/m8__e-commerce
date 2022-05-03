@@ -129,19 +129,45 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      
+      .pop-up-btn {
+        padding: 8px 12px;
+        font-size: 1.5rem;
+        font-weight:600;
+        border: 1px solid var(--color-white);
+        box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+      }
+
+      #view-btn {
+        padding: 6px 16px;
+      }
 
       #pop-up-buy-btn {
+        font-size: 1.2rem;
         background-color: var(--buy-btn-green);
       }
+
       #pop-up-buy-btn:hover {
         background-color: var(--buy-btn-green-hover);
+        transition: 0.5;
+      }
+
+      #pop-up-offer-btn {
+        font-size: 1.2rem;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.09) 40%);
+        background-color: var(--offer-btn-lilac);
+        box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
+      }
+
+      #pop-up-offer-btn:hover {
+        box-shadow: 0 0 1px 1px rgba(255,255,255,0.2);
         transition: 0.5;
       }
 
       button:hover {
         background-color: var(--dark-blue-hover);
         transition: 0.5;
-      
       }
     }
   }
@@ -156,7 +182,7 @@
  
 
 
-.parallax-wrapper{
+.parallax-wrapper {
   height: 100%;
   width: 100%;
   position: absolute; 

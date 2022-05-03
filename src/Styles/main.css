@@ -156,7 +156,6 @@
 }
 
 .window {
-
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-sky-b)), color-stop(40%, #5B7687), color-stop(3%, #4B6270), to(#33434D));
   background-image: linear-gradient(var(--color-sky-b), #5B7687 40%, #4B6270 3%, #33434D);
 
@@ -277,12 +276,44 @@
           align-items: center;
 }
 
+[role='tooltip'].popup-content .pop-up-apt-display .apt-buttons .pop-up-btn {
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid var(--color-white);
+  -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+[role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #view-btn {
+  padding: 6px 16px;
+}
+
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-buy-btn {
+  font-size: 1.2rem;
   background-color: var(--buy-btn-green);
 }
 
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-buy-btn:hover {
   background-color: var(--buy-btn-green-hover);
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+[role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-offer-btn {
+  font-size: 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(40%, rgba(0, 0, 0, 0.09)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09) 40%);
+  background-color: var(--offer-btn-lilac);
+  -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
+}
+
+[role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-offer-btn:hover {
+  -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5;
   transition: 0.5;
 }
@@ -1267,10 +1298,9 @@ button {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.sell-btn {
+.offer-btn {
   padding: 8px 15px;
   font-size: 20px;
-  cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(40%, rgba(0, 0, 0, 0.09)));
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09) 40%);
   background-color: #B2BBFF;
@@ -1278,6 +1308,25 @@ button {
           box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.197);
+}
+
+.offer-btn:hover {
+  -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.sell-btn {
+  padding: 8px 15px;
+  font-size: 20px;
+  background-color: var(--buy-btn-green);
+}
+
+.sell-btn:hover {
+  background-color: var(--buy-btn-green-hover);
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
 .apt-price-tag {
@@ -1467,6 +1516,7 @@ button {
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --buy-btn-green: rgba(63, 108, 89, 1);
   --buy-btn-green-hover: rgb(83, 119, 104);
+  --offer-btn-lilac: #9da5df;
   --dark-blue: #242A5B;
   --dark-blue-hover: #363d70;
   --nav-blue: #52629a;
