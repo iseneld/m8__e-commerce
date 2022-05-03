@@ -42,11 +42,10 @@ const Payment2 = () => {
             </div>
             <label htmlFor="cardholder">Card Holder</label>
             <input type="text" id="cardholder" name="cardholder" />
-            <div className="save-payment-check">
-              <input type="checkbox" id="remember" name="remember" />
-              <label htmlFor="remember">Save payment method</label>
-            </div>
-            <Link to="/pay3"><input type="Submit" id="paybtn" name="paybtn" value="Pay"></input></Link>
+            <input type="checkbox" id="remember" name="remember" />
+            <label htmlFor="remember">Save payment method for later use</label>
+            <Link to="/">Back</Link>
+            <input type="Submit" id="paybtn" name="paybtn" value="Pay" />
           </form>
         </section>
       </section>
