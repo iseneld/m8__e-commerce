@@ -38,12 +38,14 @@
    width: 80%;
    position:absolute;
    top:10%;
+   left:50%;
+   transform:translate(-50%,0);
   
    background: var(--lilac-background);
    border-radius: 8px;
+   padding-top:5%;
   
    display: flex;
-   justify-content: center;
    align-items: center;
    flex-direction: column;
 
