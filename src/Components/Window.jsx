@@ -10,7 +10,7 @@ const Window = ({apartment}) => {
 
   return (
     <>
-      <section className="window">
+      <section className={apartmentProp && apartmentProp.ownerName === "For sale!" ? "window-forsale" : "window-owned"}>
         <Popup trigger={<button className="window-btn"> </button>}
           position="right center" contentStyle={{ width: "300px" }}>
           <div>
