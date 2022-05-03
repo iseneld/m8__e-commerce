@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Option = () => (
   <article className="option">
     <img src="./images/coins.png" alt="Coins" />
