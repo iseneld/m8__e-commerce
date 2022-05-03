@@ -60,6 +60,7 @@ body {
   background-size: cover;
   background-position: center;
   
+  
 }
 
 #root {
@@ -68,6 +69,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+ 
   
 }
 
@@ -121,10 +123,12 @@ main {
   height: 100%;
   width: 100%;
   padding-top: 10rem;
-  
   background-image: url("/public/images/thehillsbakgrundfinal.png");
   background-size: contain;
   background-position:center;
+  background-repeat:repeat-x;
+ 
+
 }
 footer {
   width: 100%;
