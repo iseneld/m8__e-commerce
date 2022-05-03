@@ -225,5 +225,21 @@
     height: auto;
     left: 0;
   }
+
+  .rocket {
+    position: absolute;
+    top: 50px;
+    right: 500px;
+    width: 5%;
+    height: auto;
+  }
+
+  .metheo {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 5%;
+    height: auto;
+  }
 }
 
