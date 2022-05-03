@@ -156,6 +156,7 @@
 }
 
 .window {
+
   background: url(./css-content/window1.png) no-repeat;
   background-position: center;
   margin: .5vw;
@@ -270,6 +271,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons .pop-up-btn {
@@ -283,6 +285,7 @@
 
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #view-btn {
   padding: 6px 16px;
+
 }
 
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-buy-btn {
@@ -293,6 +296,7 @@
 [role='tooltip'].popup-content .pop-up-apt-display .apt-buttons #pop-up-buy-btn:hover {
   background-color: var(--buy-btn-green-hover);
   -webkit-transition: 0.5;
+
   transition: 0.5;
 }
 
@@ -1351,11 +1355,23 @@ button {
 }
 
 .poster-frame {
-  width: 5rem;
-  height: 5rem;
-  background-color: #242A5B;
+  background-color: var(--dark-blue-faded);
+  height: auto;
+  width: 10vh;
   color: #fff;
-  background-image: url("./css-content/texture-brick.jpeg");
+}
+
+.poster-frame img {
+  width: 100%;
+}
+
+.editable {
+  cursor: pointer;
+  border: 5px dashed whitesmoke;
+}
+
+.poster-frame.active {
+  border: 5px solid green;
 }
 
 .poster-grid {
