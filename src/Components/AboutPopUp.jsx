@@ -3,6 +3,7 @@ import AboutPar2 from './AboutParagraphs/AboutPar2';
 import AboutPar3 from './AboutParagraphs/AboutPar3';
 import AboutPar1 from './AboutParagraphs/AboutPar1';
 import AboutPar4 from './AboutParagraphs/AboutPar4';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const AboutPopUp = () => {
@@ -13,12 +14,14 @@ const AboutPopUp = () => {
         setPopUpHidden(!popUpHidden)
     }
 
+
+
     return (
         <div className={popUpHidden ? "faded-background-container" : "hide-pop-up"} >
             <div className="pop-up-display">
                 <section className="about-content">
 
-                    <span class="close-button" onClick={togglePopUp}>&times;</span>
+                    <Link to="/"><span class="close-button" /* onClick={togglePopUp}  */ >&times;</span></Link>
 
                     <section className="about-title-desc">
                         <AboutTitle />
