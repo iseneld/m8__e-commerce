@@ -30,6 +30,7 @@
   justify-self: flex-start;
   width: 100%;
   gap: .6rem;
+  margin-left: -10%;
 }
 
 .breadcrumb a {
@@ -90,6 +91,7 @@
   padding: 2rem;
   width: 60%;
   border-radius: 8px;
+  height: 95%;
 }
 
 .shop2-left > table {
@@ -1706,6 +1708,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
+
   z-index: 999;
 }
 
