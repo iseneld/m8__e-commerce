@@ -68,7 +68,7 @@ function AptBox({apartment}) {
       <h1 className="apt-title">{aptBoxApartment && aptBoxApartment.ownerName === "For sale!" ? "Property for sale" : aptBoxApartment.ownerName === "Showcase" ? "Showcase" : `${aptBoxApartment.ownerName}'s property` }</h1>
       { aptBoxApartment && <img src={`${API_BASE_URL}${aptBoxApartment.aptImg}`} alt="The apartment" /> }
       <PosterGrid />   
-      <button onClick={editApartment}>{editable ? "DONE" : "EDIT"}</button> 
+      {aptBoxApartment.ownerName === "Showcase" ? <button onClick={editApartment}>{editable ? "DONE" : "EDIT"}</button> : null }
     </div>
   )
 }
