@@ -612,7 +612,7 @@ input[type=password] {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%;
-  height: 50%;
+  height: 100%;
 }
 
 .profile-pic {
@@ -708,7 +708,7 @@ input[type=password] {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%;
-  height: 95%;
+  width: 70%;
 }
 
 .about-property-list {
@@ -781,7 +781,7 @@ input[type=password] {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%;
-  height: 70%;
+  height: 100%;
 }
 
 .profile-pic {
