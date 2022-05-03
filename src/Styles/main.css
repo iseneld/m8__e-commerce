@@ -12,6 +12,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--lilac-background);
+
   border-radius: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -120,7 +121,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
   border-radius: 8px;
+
 }
 
 .option {
@@ -141,9 +144,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+
   background-color: var(--dark-blue-innerfade);
   border-radius: 8px;
   margin-bottom: 3%;
+
 }
 
 .option button {
@@ -1692,10 +1697,12 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+
+  position: fixed;
   top: 0;
   padding: 1rem 0rem 0rem 1rem;
+  width: 100%;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1705,7 +1712,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 15;
+
+  z-index: 999;
+
 }
 
 header div {
