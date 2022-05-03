@@ -5,8 +5,6 @@ import PosterInventory from "./PosterInventory";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { PosterContext } from "../Pages/Apartment";
 
-import PosterInventory from "./PosterInventory";
-
 const Inventory = () => {
 
     const {inAndOutState, setInAndOutState} = useContext(PosterContext)
