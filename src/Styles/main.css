@@ -11,7 +11,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--color-2b);
+
+  background-color: var(--lilac-background);
+
   border-radius: 1rem;
 }
 
@@ -39,6 +41,21 @@
 }
 
 .shop2 {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 4rem;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.save-payment-check {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +98,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
+  border-radius: 8px;
+
 }
 
 .option {
@@ -101,7 +121,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--color-2c);
+
+  background-color: var(--dark-blue-innerfade);
+  border-radius: 8px;
+  margin-bottom: 3%;
+
 }
 
 .option button {
@@ -1383,6 +1407,62 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+}
+
+.marketplace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: 60%;
+  border-radius: 8px;
+  gap: 5%;
+  padding: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--dark-blue-extra-faded);
+  margin-top: 2%;
+}
+
+.marketplace .furniture {
+  background: var(--dark-blue-innerfade);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  padding: 2%;
+  border-radius: 8px;
+  overflow: scroll;
+}
+
+.marketplace .furniture .objects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.marketplace .furniture .objects-section .marketplace-objects {
+  background: var(--dark-blue-faded);
+  margin: 1.5%;
+  border-radius: 8px;
+  width: calc(90px + .8vw);
+  height: calc(70px + .8vw);
+
 }
 
 :root {
