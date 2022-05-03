@@ -1,6 +1,12 @@
 .shop-wrap {
-  margin: 2rem;
-  padding: 2rem;
+
+  /*   margin: 2rem;
+  padding: 2rem; */
+  height: 90%;
+  width: 80%;
+  background: var(--lilac-background);
+  border-radius: 8px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,14 +14,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--lilac-background);
-  border-radius: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+  padding: 1% 5% 0% 5%;
+
 }
 
 .shop-wrap h1 {
@@ -111,7 +112,9 @@
 .payment-form {
   background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
-  height: 100%;
+
+  height: 95%;
+
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1072,7 +1075,9 @@ input[type=password] {
 }
 
 .about-content .about-title-desc {
-  width: 60%;
+
+  width: 70%;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1089,6 +1094,7 @@ input[type=password] {
   margin-top: 0;
   gap: 3%;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .about-content .about-title-desc h2 {
@@ -1153,8 +1159,8 @@ input[type=password] {
           transform: translate(-50%, -50%);
   background-color: var(--lilac-background);
   padding: 1rem 1.5rem;
-  width: 60%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,18 +1179,22 @@ input[type=password] {
 
 .faded-background-container .close-button {
   position: absolute;
-  width: 1.5rem;
-  line-height: 1.5rem;
+  width: 3rem;
+  line-height: 3rem;
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
-  background-color: var(--dark-lilac);
+  background-color: var(--dark-blue-innerfade);
+  font-size: 2rem;
+  color: rgba(36, 42, 91, 0.6);
   right: 3%;
   top: 3%;
 }
 
 .faded-background-container .close-button:hover {
-  background-color: var(--dark-lilac-faded);
+  background-color: var(--lilac-background);
+  outline: 2px solid var(--dark-blue-innerfade);
+  color: black;
 }
 
 .hide-pop-up {
@@ -1225,10 +1235,16 @@ img {
           transform: translate(-50%, 0);
   background: var(--lilac-background);
   border-radius: 8px;
-  padding-top: 5%;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  padding-top: 5%;
+
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1708,7 +1724,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
 
   z-index: 999;
 }
