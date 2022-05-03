@@ -56,11 +56,9 @@ body {
   width: 100%;
   display: flex;
   overflow-x: hidden;
-   background: var(--bg-gradient);
-  background-image: url("/public/images/thehillsbakgrund6.png");
-  background-size: contain;
+   background: #8DB8C9;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   
 }
 
@@ -120,8 +118,13 @@ header {
 }
 
 main {
+  height: 100%;
+  width: 100%;
   padding-top: 10rem;
-  background: var(----bg-gradient);
+  
+  background-image: url("/public/images/thehillsbakgrund6.png");
+  background-size: contain;
+  background-position:center;
 }
 footer {
   width: 100%;
