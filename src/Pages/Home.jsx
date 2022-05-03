@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import House from '../Components/House';
 import AboutPop from './AboutPop';
 
@@ -14,6 +14,17 @@ const Home = ({ apartments }) => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
+
+  const pageEndRef = useRef(null)
+
+  const scrollToBottom = () => {
+    pageEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(() => {
+    scrollToBottom()
+  }, []);
+
 
 
   return (
@@ -39,6 +50,7 @@ const Home = ({ apartments }) => {
             style={{ transform: `translateX(${offsetY * 0.07}px)` }} alt="Cloud flying in the air" />
         </div>
         <House apartments={apartmentsProp} />
+        <div ref={pageEndRef} />
       </main>
       {/* </div> */}
     </>);
