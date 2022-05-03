@@ -208,3 +208,46 @@ button {
     justify-content: space-evenly;
     align-items: center;
  }
+
+
+ //MARKETPLACE
+
+ .marketplace {
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   height: 60%;
+   border-radius: 8px;
+   gap: 5%;
+   padding: 2%;
+
+   justify-content: center;
+
+   background: var(--dark-blue-extra-faded);
+   margin-top: 2%;
+
+   .furniture {
+      background: var(--dark-blue-innerfade);
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding: 2%;
+      border-radius: 8px;
+
+      .objects-section {
+         display: flex;
+         justify-content: row;
+         flex-wrap: wrap;
+
+         .marketplace-objects {
+            background: var(--dark-blue-faded);
+            margin: 1.5%;
+            border-radius: 8px;
+            width: calc(80px + .8vw);
+            height: calc(60px + .8vw);
+         }
+      }
+
+      
+   }
+ }
