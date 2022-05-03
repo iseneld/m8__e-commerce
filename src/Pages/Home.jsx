@@ -25,6 +25,10 @@ const Home = ({ apartments }) => {
         <div className='parallax-wrapper'>
           <img src='./images/ufo.png' className='ufo'
             style={{ transform: `translateX(${offsetY * -3.2}px)` }} alt="UFO flying in the air" />
+            <img src='./images/rocket.png' className='rocket'
+            style={{ transform: `translateX(${offsetY * 3.2}px) translateY(${offsetY * -3.2}px)` }} alt="Rocket flying in the air" />
+            <img src='./images/metheo.png' className='metheo'
+            style={{ transform: `translateX(${offsetY * 3.2}px) translateY(${offsetY * 1.2}px)` }} alt="Metheorite flying in the air" />
           <img src='./images/ironman.png' className='ironman'
             style={{ transform: `translateX(${offsetY * 2}px)` }} alt="Iron Man flying in the air" />
           <img src='./images/clouds.png' className='clouds2'

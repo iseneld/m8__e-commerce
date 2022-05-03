@@ -226,5 +226,21 @@
     height: auto;
     left: 0;
   }
+
+  .rocket {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    width: 5%;
+    height: auto;
+  }
+
+  .metheo {
+    position: absolute;
+    top: -100px;
+    left: -75px;
+    width: 5%;
+    height: auto;
+  }
 }
 
