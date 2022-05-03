@@ -34,14 +34,22 @@
   margin-top: .5vh;
 }
 
-.window {
+.window-owned {
   background: url(./css-content/window1.png) no-repeat;
   background-position: center;
   margin: .5vw;
   height: var(--window-size);
   width: var(--window-size);
   border: 2px solid var(--color-white);
-  
+}
+
+.window-forsale {
+  background: url(./css-content/window1forsale.png) no-repeat;
+  background-position: center;
+  margin: .5vw;
+  height: var(--window-size);
+  width: var(--window-size);
+  border: 2px solid var(--color-white);
 }
 
 .window-btn {
