@@ -994,6 +994,7 @@ input[type=password] {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0% 5%;
+  z-index: 1000;
 }
 
 .about-content h3 {
@@ -1062,6 +1063,7 @@ input[type=password] {
 }
 
 .faded-background-container {
+  z-index: 1000;
   position: fixed;
   left: 0;
   top: 0;
@@ -1118,6 +1120,7 @@ input[type=password] {
 
 .hide-pop-up {
   visibility: hidden;
+  display: none;
   /*     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; */
 }
