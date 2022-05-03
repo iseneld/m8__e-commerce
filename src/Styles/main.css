@@ -1,12 +1,20 @@
 .shop-wrap {
-  margin: 2rem;
-  padding: 2rem;
+  height: 90%;
+  width: 80%;
+  background: var(--lilac-background);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--lilac-background);
-  border-radius: 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1% 5% 0% 5%;
+
 }
 
 .shop-wrap h1 {
@@ -19,6 +27,7 @@
   justify-self: flex-start;
   width: 100%;
   gap: .6rem;
+  margin-left: -10%;
 }
 
 .breadcrumb a {
@@ -62,6 +71,7 @@
   padding: 2rem;
   width: 60%;
   border-radius: 8px;
+  height: 95%;
 }
 
 .shop2-left > table {
@@ -81,20 +91,40 @@
 .payment-form {
   background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
-  height: 100%;
-  flex-grow: 1;
+
+  height: 95%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
   border-radius: 8px;
 }
 
 .option {
   flex-grow: 1;
   padding: 1rem;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
   background-color: var(--dark-blue-innerfade);
   border-radius: 8px;
   margin-bottom: 3%;
@@ -878,6 +908,8 @@ img {
 .apt-display {
   height: 90%;
   width: 80%;
+  position: absolute;
+  top: 10%;
   background: var(--lilac-background);
   border-radius: 8px;
   display: flex;
@@ -1077,8 +1109,8 @@ button {
   background: var(--dark-blue-faded);
   margin: 1.5%;
   border-radius: 8px;
-  width: calc(90px + .8vw);
-  height: calc(70px + .8vw);
+  width: auto;
+  height: calc(100px + .8vw);
 }
 
 :root {
@@ -1233,9 +1265,21 @@ header {
   top: 0;
   padding: 1rem 0rem 0rem 1rem;
   width: 100%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   z-index: 999;
 }
 
