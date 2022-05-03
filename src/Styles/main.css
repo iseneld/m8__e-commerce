@@ -2,15 +2,34 @@
   margin: 2rem;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--color-2b);
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--lilac-background);
+
   border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shop-wrap h1 {
   margin: 2rem;
   text-align: center;
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-start;
+  width: 100%;
+  gap: .6rem;
 }
 
 .breadcrumb a {
@@ -26,49 +45,94 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  border-radius: 8px;
+}
+
+#remember {
+  width: 8%;
 }
 
 .shop2 {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.save-payment-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .shop2-left,
 .shop3-right {
-  background-color: var(--color-2c);
+  background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
-  width: 50%;
+  width: 60%;
+  border-radius: 8px;
 }
 
 .shop2-left > table {
   margin-bottom: 2rem;
+  border-radius: 8px;
 }
 
 .shop2-left > table,
 .shop2-left > footer {
-  background-color: var(--color-2c);
+  background-color: var(--dark-blue-innerfade);
   width: 100%;
   padding: 0;
+  padding: 3%;
+  border-radius: 8px;
 }
 
 .payment-form {
-  background-color: var(--dark-lilac-faded);
+  background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
   height: 100%;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+
+
 }
 
 .option {
   flex-grow: 1;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-2c);
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--dark-blue-innerfade);
+  border-radius: 8px;
+  margin-bottom: 3%;
+
 }
 
 .option button {

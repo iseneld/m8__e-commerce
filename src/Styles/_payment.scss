@@ -4,15 +4,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-2b);
+  background-color: var(--lilac-background);
   border-radius: 1rem;
+  align-items: center;
+
   h1 {
     margin: 2rem;
     text-align: center;
   }
   }
   
-  .breadcrumb {
+.breadcrumb {
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
+    gap: .6rem; 
     a {
       color: black;
       text-decoration: none;
@@ -27,39 +33,60 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  border-radius: 8px;
+}
+
+#remember {
+  width: 8%;
 }
 
 .shop2 {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.save-payment-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  //width: 80%;
 }
 
 .shop2-left,
 .shop3-right {
-  background-color: var(--color-2c);
+  //background-color: var(--color-2c);
+  background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
-  width: 50%;
+  width: 60%;
+  border-radius: 8px;
 }
 
 .shop2-left>table {
   margin-bottom: 2rem;
+  border-radius: 8px;
 }
 
 .shop2-left>table,
 .shop2-left>footer {
-  background-color: var(--color-2c);
+  background-color: var(--dark-blue-innerfade);
   width: 100%;
   padding: 0;
+  padding: 3%;
+  border-radius: 8px;
 }
 
 .payment-form {
-  background-color: var(--dark-lilac-faded);
+  background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
   height: 100%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
 }
 
 .option {
@@ -69,7 +96,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-2c);
+  background-color: var(--dark-blue-innerfade);
+  border-radius: 8px;
+  margin-bottom: 3%;
 
   button {
     border-radius: .5rem;
