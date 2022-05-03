@@ -1176,6 +1176,8 @@ img {
 .apt-display {
   height: 90%;
   width: 80%;
+  position: absolute;
+  top: 10%;
   background: var(--lilac-background);
   border-radius: 8px;
   display: -webkit-box;
@@ -1461,8 +1463,8 @@ button {
   background: var(--dark-blue-faded);
   margin: 1.5%;
   border-radius: 8px;
-  width: calc(90px + .8vw);
-  height: calc(70px + .8vw);
+  width: auto;
+  height: calc(100px + .8vw);
 }
 
 :root {
