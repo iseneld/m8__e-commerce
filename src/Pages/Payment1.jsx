@@ -4,18 +4,20 @@ import Breadcrumb from '../Components/Breadcrumb';
 const Payment1 = () => {
   return (
     <>
-      <section className="shop-wrap">
-        <Breadcrumb />
-        <h1>Buy Hill Coins</h1>
-        <section className="shop">
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-        </section>
-      </section>
+      <div className="user-container">
+        <div className="shop-wrap">
+          <Breadcrumb />
+          <h1>Buy Hill Coins</h1>
+          <section className="shop">
+            <Option />
+            <Option />
+            <Option />
+            <Option />
+            <Option />
+            <Option />
+          </section>
+        </div>
+      </div>
 
     </>
   )
