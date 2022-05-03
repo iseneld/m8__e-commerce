@@ -9,11 +9,12 @@ function AptDisplay() {
   let { aptNumber } = useParams();
   const [apartment, setApartment] = useState({});
 
+
   useEffect(() => {
     async function fetchApt() {
       const response = await fetch(`${API_BASE_URL}/apartments`);
       const result = await response.json();
-      console.log('result is', result);
+      //console.log('result is', result);
       const aptItem =  await result.filter((apt) => {
           return apt.aptNumber == aptNumber;
           })
@@ -22,6 +23,7 @@ function AptDisplay() {
     }
     fetchApt();
   }, []);
+
 
   return (
     <div className="apt-display apt-display--your-property">
