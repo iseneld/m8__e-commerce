@@ -133,7 +133,7 @@
 }
 
 .door {
-  background: url(./css-content/door.jpeg) no-repeat;
+  background: url(./css-content/doorfinal.png) no-repeat;
   background-size: cover;
   height: var(--window-size);
   width: calc(var(--window-size) / 1.5);
@@ -689,6 +689,8 @@ input[type=password] {
   letter-spacing: 0.5px;
   font-family: springwoodFont;
   color: white;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .user-content {
@@ -980,11 +982,23 @@ button {
 }
 
 .poster-frame {
-  width: 5rem;
-  height: 5rem;
-  background-color: #242A5B;
+  background-color: var(--dark-blue-faded);
+  height: auto;
+  width: 10vh;
   color: #fff;
-  background-image: url("./css-content/texture-brick.jpeg");
+}
+
+.poster-frame img {
+  width: 100%;
+}
+
+.editable {
+  cursor: pointer;
+  border: 5px dashed whitesmoke;
+}
+
+.poster-frame.active {
+  border: 5px solid green;
 }
 
 .poster-grid {
@@ -1091,7 +1105,7 @@ button {
   --color-dark: #3f6c59;
   --color-sky-a: #97CAD1;
   --color-sky-b: #95AFDE;
-  --lilac-background: #B3BBFF;
+  --lilac-background: #BAD3DE;
   --faded-lilac: rgba(36, 42, 91, 0.19);
   --buy-btn-green: rgba(63, 108, 89, 1);
   --buy-btn-green-hover: rgb(83, 119, 104);
@@ -1188,7 +1202,7 @@ main {
   height: 100%;
   width: 100%;
   padding-top: 10rem;
-  background-image: url("/public/images/thehillsbakgrund6.png");
+  background-image: url("/public/images/thehillsbakgrundfinal.png");
   background-size: contain;
   background-position: center;
 }

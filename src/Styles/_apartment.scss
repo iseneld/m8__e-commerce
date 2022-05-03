@@ -180,11 +180,25 @@ button {
  }
 
  .poster-frame {
-    width: 5rem;
-    height: 5rem;
-    background-color: #242A5B;
+    background-color: var(--dark-blue-faded);
+    height:auto;
+    width:10vh;
     color: #fff;
-    background-image: url("./css-content/texture-brick.jpeg");
+    //background-image: url("./css-content/texture-brick.jpeg");
+
+    img {
+       width:100%;
+    }
+ }
+
+ .editable {
+   cursor: pointer;
+   border: 5px dashed whitesmoke;
+ }
+
+
+ .poster-frame.active {
+   border: 5px solid green;
  }
 
  .poster-grid {
