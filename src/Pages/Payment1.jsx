@@ -1,12 +1,12 @@
 import Option from '../Components/Option';
-import Breadcrumb from '../Components/Breadcrumb'; 
+import Breadcrumb from '../Components/Breadcrumb';
 
 const Payment1 = () => {
   return (
     <>
-    <section className="shop-wrap">
-      <Breadcrumb />
-      <h1>Buy XTREME Coins</h1>
+      <section className="shop-wrap">
+        <Breadcrumb />
+        <h1>Buy Hill Coins</h1>
         <section className="shop">
           <Option />
           <Option />
@@ -14,9 +14,9 @@ const Payment1 = () => {
           <Option />
           <Option />
           <Option />
+        </section>
       </section>
-    </section>
-      
+
     </>
   )
 }

@@ -233,6 +233,7 @@ button {
       width: 40%;
       padding: 2%;
       border-radius: 8px;
+      overflow: scroll;
 
       .objects-section {
          display: flex;
@@ -243,8 +244,8 @@ button {
             background: var(--dark-blue-faded);
             margin: 1.5%;
             border-radius: 8px;
-            width: calc(80px + .8vw);
-            height: calc(60px + .8vw);
+            width: calc(90px + .8vw);
+            height: calc(70px + .8vw);
          }
       }
 
