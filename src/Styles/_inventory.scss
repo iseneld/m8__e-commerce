@@ -23,6 +23,7 @@
     
     transition: left 1s;
     transition-timing-function: ease-in-out;
+    z-index: 1001;
 
     .inventory-item-title {
         display: flex;

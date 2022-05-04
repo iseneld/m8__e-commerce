@@ -1,22 +1,21 @@
 .shop-wrap {
-
   /*   margin: 2rem;
   padding: 2rem; */
   height: 90%;
   width: 80%;
   background: var(--lilac-background);
   border-radius: 8px;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
   padding: 1% 5% 0% 5%;
-
 }
 
 .shop-wrap h1 {
@@ -112,9 +111,7 @@
 .payment-form {
   background-color: var(--dark-blue-extra-faded);
   padding: 2rem;
-
   height: 95%;
-
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1075,9 +1072,7 @@ input[type=password] {
 }
 
 .about-content .about-title-desc {
-
   width: 70%;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1235,16 +1230,10 @@ img {
           transform: translate(-50%, 0);
   background: var(--lilac-background);
   border-radius: 8px;
-
+  padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          
-
-  padding-top: 5%;
-
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1552,6 +1541,7 @@ button {
   transition: left 1s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+  z-index: 1001;
 }
 
 .inventory-container .inventory-item-title {
@@ -1724,7 +1714,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
   z-index: 999;
 }
 
